@@ -1,0 +1,16 @@
+.word {
+  margin-left: 0.2rem;
+  margin-right: 0.2rem;
+}
+
+.word:hover {
+  background-color: yellow;
+}
+
+.active {
+  background-color: green;
+}
+
+.hover {
+  background-color: grey;
+}
