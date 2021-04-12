@@ -14,3 +14,7 @@
 .hover {
   background-color: grey;
 }
+
+.hover:hover {
+  background-color: grey;
+}

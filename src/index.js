@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import 'typeface-tinos';
 import App from './components/App';
 import reportWebVitals from './reportWebVitals';
 

@@ -2,7 +2,7 @@ import { useState } from 'react';
 
 import Text from '../Text';
 
-import './App.css';
+import styles from './App.module.css';
 
 const greek = [
   'Δαρείου',
@@ -25,9 +25,21 @@ const english = [
   'them',
 ];
 
+const french = [
+  'De',
+  "l'hymen",
+  'de',
+  'Darius',
+  'et',
+  'de',
+  'Parysatis',
+  'naquirent',
+  'deux',
+  'princes',
+]
+
 const App = () => {
   const [activeWords, setActiveWords] = useState([]);
-  const [activeIndex, setActiveIndex] = useState(null);
   const [hoverWords, setHoverWords] = useState([]);
   const [alignment, setAlignment] = useState([]);
 
@@ -40,9 +52,14 @@ const App = () => {
   };
 
   return (
-    <div>
+    <div className={styles.container}>
       <Text text={greek} index={0} activeWords={activeWords} setActiveWords={setActiveWords} hoverWords={hoverWords} setHoverWords={setHoverWords} alignment={alignment} />
       <Text text={english} index={1} activeWords={activeWords} setActiveWords={setActiveWords} hoverWords={hoverWords} setHoverWords={setHoverWords} alignment={alignment} />
+      <Text text={french} index={2} activeWords={activeWords} setActiveWords={setActiveWords} hoverWords={hoverWords} setHoverWords={setHoverWords} alignment={alignment} />
+      <Text text={english} index={3} activeWords={activeWords} setActiveWords={setActiveWords} hoverWords={hoverWords} setHoverWords={setHoverWords} alignment={alignment} />
+      <Text text={english} index={4} activeWords={activeWords} setActiveWords={setActiveWords} hoverWords={hoverWords} setHoverWords={setHoverWords} alignment={alignment} />
+      <Text text={english} index={5} activeWords={activeWords} setActiveWords={setActiveWords} hoverWords={hoverWords} setHoverWords={setHoverWords} alignment={alignment} />
+      <Text text={english} index={6} activeWords={activeWords} setActiveWords={setActiveWords} hoverWords={hoverWords} setHoverWords={setHoverWords} alignment={alignment} />
       <button onClick={onClick}>align</button>
     </div>
   );

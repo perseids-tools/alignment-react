@@ -10624,6 +10624,16 @@ typedarray@^0.0.6:
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
 
+typeface-arimo@^1.1.13:
+  version "1.1.13"
+  resolved "https://registry.yarnpkg.com/typeface-arimo/-/typeface-arimo-1.1.13.tgz#e6d21477df1db5f2d912505e6979e18a86e8a2f6"
+  integrity sha512-OhkxAAd/xejNWbizVdPyjs9UIRm+9oSBK5jsO/Xqv3bPD9hgzPZkKoFEbCNDmI07tXdiNhd5OJlrpL3De4kOCA==
+
+typeface-tinos@^1.1.13:
+  version "1.1.13"
+  resolved "https://registry.yarnpkg.com/typeface-tinos/-/typeface-tinos-1.1.13.tgz#e62d3b1458a75192b13fb12a52f20b6acc36de8d"
+  integrity sha512-49abaDH9jz8vEZUPPEq9H56vGYgiTr/49YjjJFDVuer9/ZVmYw5fJ6dMiemZKi+ph7ykL9+bHeScrNyD3NMM9g==
+
 unicode-canonical-property-names-ecmascript@^1.0.4:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/unicode-canonical-property-names-ecmascript/-/unicode-canonical-property-names-ecmascript-1.0.4.tgz#2619800c4c825800efdd8343af7dd9933cbe2818"
