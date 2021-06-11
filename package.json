@@ -11,7 +11,8 @@
     "react-scripts": "4.0.3",
     "typeface-arimo": "^1.1.13",
     "typeface-tinos": "^1.1.13",
-    "web-vitals": "^1.0.1"
+    "web-vitals": "^1.0.1",
+    "xml2js": "^0.4.23"
   },
   "scripts": {
     "start": "react-scripts start",
