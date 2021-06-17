@@ -1,12 +1,15 @@
+import { useState } from 'react';
+
 import { xmlToJson } from '../../utils/parsing';
 
 import AlignmentContext from './alignment-context';
 
 const Alignment = ({ alignment, children }) => {
   const json = xmlToJson(alignment);
+  const { active, setActive } = useState(null);
 
   return (
-    <AlignmentContext.Provider value={{ json }}>
+    <AlignmentContext.Provider value={{ json, active, setActive }}>
       {children}
     </AlignmentContext.Provider>
   );
