@@ -39,8 +39,8 @@ const xml = `
 
 const App = () => (
   <Alignment alignment={xml} id="1">
-    <Segment language="eng" />
-    <Segment language="fre" />
+    <Segment lnum="L1" />
+    <Segment lnum="L2" />
   </Alignment>
 );
 

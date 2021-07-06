@@ -2,9 +2,9 @@ import AlignmentContext from './alignment-context';
 
 import Segment from '../Segment';
 
-const AdditionalFieldsWithContext = ({ language }) => (
+const AdditionalFieldsWithContext = ({ lnum }) => (
   <AlignmentContext.Consumer>
-    {({ json, id, active, setActive }) => <Segment language={language} json={json} id={id} active={active} setActive={setActive} />}
+    {({ json, id, active, setActive }) => <Segment lnum={lnum} json={json} id={id} active={active} setActive={setActive} />}
   </AlignmentContext.Consumer>
 );
 

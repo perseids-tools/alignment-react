@@ -1,16 +1,3 @@
-const buildLanguageMap = (languages) => {
-  const languageMap = {};
-
-  languages.forEach((language) => {
-    const lang = language.$['xml:lang'];
-    const lnum = language.$.lnum;
-
-    languageMap[lang] = lnum;
-  });
-
-  return languageMap;
-};
-
 const wordMap = (words) => {
   const map = [];
 
@@ -26,12 +13,23 @@ const wordMap = (words) => {
   return map;
 };
 
-const Segment = ({ language, json, id, active, setActive }) => {
+const getActiveN = (active, lnum) => {
+  if (active) {
+    const activeN = active.from === lnum ? active.n : active.nrefs;
+
+    return activeN.split(/\s+/);
+  }
+
+  return [];
+};
+
+const Segment = ({ lnum, json, id, active, setActive }) => {
   const alignedText = json['aligned-text'];
 
-  const languageMap = buildLanguageMap(alignedText.language);
-  const sentence = alignedText.sentence.find(({ $: { id: sentenceId }}) => sentenceId == id);
-  const words = sentence ? sentence.wds.find(({ $: { lnum }}) => lnum == languageMap[language]) : false;
+  const sentence = alignedText.sentence.find(({ $: { id: sentenceId }}) => sentenceId === id);
+  const words = sentence ? sentence.wds.find(({ $ }) => $.lnum === lnum) : false;
+
+  const activeN = getActiveN(active, lnum);
 
   if (!words) {
     return false;
