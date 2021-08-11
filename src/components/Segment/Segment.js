@@ -23,6 +23,29 @@ const getActiveN = (active, lnum) => {
   return [];
 };
 
+const canonicalOrder = (stringOrArray) => {
+  const array = typeof stringOrArray === 'string' ? stringOrArray.split(/\s+/) : stringOrArray;
+
+  return array.sort().join(' ');
+};
+
+const generateGroups = (words) => {
+  const groups = {};
+
+  words.w.forEach(({ refs, $: { n }}) => {
+    if (refs) {
+      refs.forEach(({ $: { nrefs }}) => {
+        const canonicalNref = canonicalOrder(nrefs);
+
+        groups[canonicalNref] = groups[canonicalNref] || [];
+        groups[canonicalNref].push(n);
+      });
+    }
+  });
+
+  return groups;
+};
+
 const Segment = ({ lnum, json, id, active, setActive }) => {
   const alignedText = json['aligned-text'];
 
@@ -34,6 +57,8 @@ const Segment = ({ lnum, json, id, active, setActive }) => {
   if (!words) {
     return false;
   }
+
+  console.log(generateGroups(words))
 
   return (
     <div>
