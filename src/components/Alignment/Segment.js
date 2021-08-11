@@ -1,11 +1,11 @@
-import AlignmentContext from './alignment-context';
+import SentenceContext from './sentence-context';
 
 import Segment from '../Segment';
 
-const AdditionalFieldsWithContext = ({ lnum }) => (
-  <AlignmentContext.Consumer>
-    {({ json, id, active, setActive }) => <Segment lnum={lnum} json={json} id={id} active={active} setActive={setActive} />}
-  </AlignmentContext.Consumer>
+const SegmentWithContext = ({ lnum }) => (
+  <SentenceContext.Consumer>
+    {({ sentence, active, setActive }) => <Segment lnum={lnum} sentence={sentence} active={active} setActive={setActive} />}
+  </SentenceContext.Consumer>
 );
 
-export default AdditionalFieldsWithContext;
+export default SegmentWithContext;

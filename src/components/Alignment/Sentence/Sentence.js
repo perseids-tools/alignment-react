@@ -4,30 +4,27 @@ import AlignmentContext from '../alignment-context';
 import SentenceContext from '../sentence-context';
 
 const buildIdMap = (json, id) => {
-  const alignedText = json['aligned-text'];
-
-  const sentence = alignedText.sentence.find(({ $: { id: sentenceId }}) => sentenceId === id);
-  const words = sentence ? sentence.wds.find(({ $ }) => $.lnum === lnum) : false;
   const idMap = {};
 
   return idMap;
 };
 
-const WrappedSentence = ({ id, children }) => {
+const WrappedSentence = ({ id, json, children }) => {
   const [active, setActive] = useState(null);
   const [idMap, setIdMap] = useState(null);
 
-  useEffect(() => {
-    setIdMap(buildIdMap(json, id));
-  }, [id, json]);
+  // useEffect(() => {
+  //   setIdMap(buildIdMap(json, id));
+  // }, [id, json]);
+
+  const alignedText = json['aligned-text'];
+  const sentence = alignedText.sentence.find(({ $: { id: sentenceId }}) => sentenceId === id);
 
   return (
     <SentenceContext.Provider value={{
       sentence,
-      config,
       active,
-      toggleActive,
-      highlight,
+      setActive,
     }}
     >
       {children}

@@ -1,4 +1,5 @@
 import Alignment from '../Alignment';
+import Sentence from '../Alignment/Sentence';
 import Segment from '../Alignment/Segment';
 
 const xml = `
@@ -38,9 +39,11 @@ const xml = `
 `;
 
 const App = () => (
-  <Alignment alignment={xml} id="1">
-    <Segment lnum="L1" />
-    <Segment lnum="L2" />
+  <Alignment alignment={xml}>
+    <Sentence id="1">
+      <Segment lnum="L1" />
+      <Segment lnum="L2" />
+    </Sentence>
   </Alignment>
 );
 
