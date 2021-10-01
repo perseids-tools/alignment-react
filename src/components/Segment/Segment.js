@@ -46,7 +46,7 @@ const wordMap = (words) => {
 //   return groups;
 // };
 
-const Segment = ({ lnum, sentence }) => {
+const Segment = ({ lnum, sentence, active, setActive }) => {
   // const alignedText = json['aligned-text'];
   //
   // const sentence = alignedText.sentence.find(({ $: { id: sentenceId }}) => sentenceId === id);
