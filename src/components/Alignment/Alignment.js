@@ -1,5 +1,3 @@
-import { useState } from 'react';
-
 import { xmlToJson } from '../../utils/parsing';
 
 import AlignmentContext from './alignment-context';
