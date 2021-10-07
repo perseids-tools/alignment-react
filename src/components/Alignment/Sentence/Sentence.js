@@ -5,7 +5,7 @@ import SentenceContext from '../sentence-context';
 
 const uniq = (array) => Array.from(new Set(array));
 
-// The XML structure used by Perseids for alignments is poorly designed:
+// The XML structure used by Perseids for alignments includes some gotchas:
 //   * Word IDs are not globally unique
 //   * It is possible for A to be aligned with B without B being aligned with A
 //   * References do not have a field for `lnum`, meaning that alignments with more
