@@ -4,11 +4,11 @@ import Segment from '../Alignment/Segment';
 
 const xml = `
 <aligned-text xmlns="http://alpheios.net/namespaces/aligned-text">
-  <language lnum="L1" xml:lang="eng" dir="ltr"/>
-  <language lnum="L2" xml:lang="fre" dir="ltr"/>
+  <language lnum="en" xml:lang="en" dir="ltr"/>
+  <language lnum="fr" xml:lang="fr" dir="ltr"/>
   <comment class="title">alignment</comment>
   <sentence id="1" document_id="">
-    <wds lnum="L1">
+    <wds lnum="en">
       <comment class="uri"/>
       <w n="1-1">
         <text>hello</text>
@@ -19,7 +19,7 @@ const xml = `
         <refs nrefs="1-2 1-3"/>
       </w>
     </wds>
-    <wds lnum="L2">
+    <wds lnum="fr">
       <comment class="uri"/>
       <w n="1-1">
         <text>bonjour</text>
@@ -41,8 +41,8 @@ const xml = `
 const App = () => (
   <Alignment alignment={xml}>
     <Sentence id="1">
-      <Segment lnum="L1" />
-      <Segment lnum="L2" />
+      <Segment lnum="en" />
+      <Segment lnum="fr" />
     </Sentence>
   </Alignment>
 );

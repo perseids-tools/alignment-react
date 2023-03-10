@@ -48,6 +48,14 @@ const buildIdMap = (alignedText, sentence, id) => {
     idMap[outerLnum][outerN][innerLnum].add(innerN);
   };
 
+  const unifySets = (lnum1, n1, lnum2, n2) => {
+    idMap[lnum1][n1][lnum1].forEach((v) => idMap[lnum2][n2][lnum1].add(v));
+    idMap[lnum1][n1][lnum2].forEach((v) => idMap[lnum2][n2][lnum2].add(v));
+
+    idMap[lnum2][n2][lnum1] = idMap[lnum1][n1][lnum1];
+    idMap[lnum2][n2][lnum2] = idMap[lnum1][n1][lnum2];
+  };
+
   sentence.wds.forEach(wd => {
     const lnum = wd.$.lnum;
 
@@ -64,7 +72,7 @@ const buildIdMap = (alignedText, sentence, id) => {
             nrefs.forEach(nref => {
               addToSet(lnum, n, lnumRef, nref);
               addToSet(lnumRef, nref, lnum, n);
-              addToSet(lnumRef, nref, lnumRef, nref);
+              unifySets(lnum, n, lnumRef, nref);
             });
           }
         });
@@ -76,22 +84,29 @@ const buildIdMap = (alignedText, sentence, id) => {
 };
 
 const WrappedSentence = ({ id, json, children }) => {
-  const [active, setActive] = useState(null);
+  const [active, setActive] = useState({});
   const [idMap, setIdMap] = useState({});
-
-  const alignedText = json['aligned-text'];
-  const sentence = alignedText.sentence.find(({ $: { id: sentenceId }}) => sentenceId === id);
+  const [sentence, setSentence] = useState({});
 
   useEffect(() => {
+    const alignedText = json['aligned-text'];
+    const sentence = alignedText.sentence.find(({ $: { id: sentenceId }}) => sentenceId === id);
+
+    setSentence(sentence);
     setIdMap(buildIdMap(alignedText, sentence));
   }, [id, json]);
+
+  const setActiveFromChild = ([lnum, wordId]) => {
+    if (idMap[lnum] && idMap[lnum][wordId]) {
+      setActive(idMap[lnum][wordId]);
+    }
+  };
 
   return (
     <SentenceContext.Provider value={{
       sentence,
       active,
-      setActive,
-      idMap,
+      setActive: setActiveFromChild,
     }}
     >
       {children}

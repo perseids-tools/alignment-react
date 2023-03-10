@@ -1,10 +1,25 @@
-const wordMap = (words) => {
+import styles from './Segment.module.scss';
+
+const wordMap = (words, lnum, active, setActive) => {
   const map = [];
 
   words.w.forEach((word) => {
     const { text, $: { n }} = word;
+    const classes = [styles.word]
 
-    map.push(<span key={n}>{text[0]}</span>);
+    if (active[lnum] && active[lnum].has(n)) {
+      classes.push(styles.active);
+    }
+
+    map.push(
+      <span
+        key={n}
+        className={classes.join(' ')}
+        onClick={() => setActive([lnum, n])}
+      >
+        {text[0]}
+      </span>
+    );
     map.push(' ');
   });
 
@@ -13,54 +28,16 @@ const wordMap = (words) => {
   return map;
 };
 
-// const getActiveN = (active, lnum) => {
-//   if (active) {
-//     const activeN = active.from === lnum ? active.n : active.nrefs;
-//
-//     return activeN.split(/\s+/);
-//   }
-//
-//   return [];
-// };
-//
-// const canonicalOrder = (stringOrArray) => {
-//   const array = typeof stringOrArray === 'string' ? stringOrArray.split(/\s+/) : stringOrArray;
-//
-//   return array.sort().join(' ');
-// };
-//
-// const generateGroups = (words) => {
-//   const groups = {};
-//
-//   words.w.forEach(({ refs, $: { n }}) => {
-//     if (refs) {
-//       refs.forEach(({ $: { nrefs }}) => {
-//         const canonicalNref = canonicalOrder(nrefs);
-//
-//         groups[canonicalNref] = groups[canonicalNref] || [];
-//         groups[canonicalNref].push(n);
-//       });
-//     }
-//   });
-//
-//   return groups;
-// };
-
 const Segment = ({ lnum, sentence, active, setActive }) => {
-  // const alignedText = json['aligned-text'];
-  //
-  // const sentence = alignedText.sentence.find(({ $: { id: sentenceId }}) => sentenceId === id);
-  const words = sentence ? sentence.wds.find(({ $ }) => $.lnum === lnum) : false;
-
-  // const activeN = getActiveN(active, lnum);
+  const words = (sentence && sentence.wds) ? sentence.wds.find(({ $ }) => $.lnum === lnum) : false;
 
   if (!words) {
     return false;
   }
 
   return (
-    <div>
-      {wordMap(words)}
+    <div className={styles.text}>
+      {wordMap(words, lnum, active, setActive)}
     </div>
   );
 };
