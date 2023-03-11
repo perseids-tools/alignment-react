@@ -1,3 +1,4 @@
+import React from 'react';
 import SentenceContext from './sentence-context';
 
 import Segment from '../Segment';

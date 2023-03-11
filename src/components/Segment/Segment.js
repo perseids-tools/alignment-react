@@ -1,3 +1,4 @@
+import React from 'react';
 import styles from './Segment.module.scss';
 
 const wordMap = (words, lnum, active, setActive) => {

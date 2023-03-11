@@ -1,3 +1,4 @@
+import React from 'react';
 import { xmlToJson } from '../../utils/parsing';
 
 import AlignmentContext from './alignment-context';

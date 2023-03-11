@@ -1,6 +1,7 @@
-import Alignment from '../Alignment';
-import Sentence from '../Alignment/Sentence';
-import Segment from '../Alignment/Segment';
+import React from 'react';
+
+import { Alignment, Sentence, Segment } from 'alignment-react';
+import 'alignment-react/dist/index.css';
 
 const xml = `
 <aligned-text xmlns="http://alpheios.net/namespaces/aligned-text">
