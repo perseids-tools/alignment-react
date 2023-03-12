@@ -59,7 +59,7 @@ const renderComment = (comment, key, indent) => {
   if (_) {
     return (
       <div key={key}>
-        {openingTag('comment', $, `open-${key}`, indent)}
+        {openingTag('comment', $, `open-${key}`, indent, false, false)}
         {_}
         {closingTag('comment', `close-${key}`)}
       </div>

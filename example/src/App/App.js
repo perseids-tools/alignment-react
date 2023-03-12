@@ -30,6 +30,7 @@ const xml = `
             </w>
             <w n="1-3">
                 <text>ἱστορίης</text>
+                <comment class="mark">Sometimes translated as "history"</comment>
                 <refs nrefs="1-5 1-6 1-7"/>
             </w>
             <w n="1-4">
