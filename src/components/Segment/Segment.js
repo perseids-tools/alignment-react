@@ -5,7 +5,7 @@ import { activeType, sentenceType } from '../../types';
 
 import styles from './Segment.module.scss';
 
-const wordSpans = (words, lnum, active, setActive) => {
+const wordSpans = (words, lnum, active, toggleActive) => {
   const spans = [];
 
   words.w.forEach((word) => {
@@ -16,7 +16,7 @@ const wordSpans = (words, lnum, active, setActive) => {
       classes.push(styles.active);
     }
     const onClick = () => {
-      setActive([lnum, n]);
+      toggleActive([lnum, n]);
     };
     const onKeyDown = (event) => {
       const { key } = event;
@@ -47,7 +47,7 @@ const wordSpans = (words, lnum, active, setActive) => {
 };
 
 const Segment = ({
-  lnum, sentence, active, setActive,
+  lnum, sentence, active, toggleActive,
 }) => {
   const words = (sentence && sentence.wds) ? sentence.wds.find(({ $ }) => $.lnum === lnum) : false;
 
@@ -57,7 +57,7 @@ const Segment = ({
 
   return (
     <div className={styles.text}>
-      {wordSpans(words, lnum, active, setActive)}
+      {wordSpans(words, lnum, active, toggleActive)}
     </div>
   );
 };
@@ -66,7 +66,7 @@ Segment.propTypes = {
   lnum: string.isRequired,
   sentence: sentenceType.isRequired,
   active: activeType,
-  setActive: func.isRequired,
+  toggleActive: func.isRequired,
 };
 
 Segment.defaultProps = {

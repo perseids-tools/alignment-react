@@ -7,12 +7,12 @@ import Segment from '../Segment';
 
 const SegmentWithContext = ({ lnum }) => (
   <SentenceContext.Consumer>
-    {({ sentence, active, setActive }) => (
+    {({ sentence, active, toggleActive }) => (
       <Segment
         lnum={lnum}
         sentence={sentence}
         active={active}
-        setActive={setActive}
+        toggleActive={toggleActive}
       />
     )}
   </SentenceContext.Consumer>

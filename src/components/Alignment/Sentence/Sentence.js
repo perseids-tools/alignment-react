@@ -108,8 +108,10 @@ const WrappedSentence = ({ id, json, children }) => {
     setIdMap(buildIdMap(alignedText, newSentence));
   }, [id, json]);
 
-  const setActiveFromChild = ([lnum, wordId]) => {
-    if (idMap[lnum] && idMap[lnum][wordId]) {
+  const toggleActive = ([lnum, wordId]) => {
+    if (active && active[lnum] && active[lnum].has(wordId)) {
+      setActive(null);
+    } else if (idMap[lnum] && idMap[lnum][wordId]) {
       setActive(idMap[lnum][wordId]);
     }
   };
@@ -118,7 +120,7 @@ const WrappedSentence = ({ id, json, children }) => {
     <SentenceContext.Provider value={{
       sentence,
       active,
-      setActive: setActiveFromChild,
+      toggleActive,
     }}
     >
       {children}
