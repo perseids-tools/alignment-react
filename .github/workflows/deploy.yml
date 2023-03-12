@@ -25,6 +25,9 @@ jobs:
         env:
           CI: true
 
+      - name: Build
+        run: yarn build
+
       - name: Predeploy
         run: yarn predeploy
         env:
