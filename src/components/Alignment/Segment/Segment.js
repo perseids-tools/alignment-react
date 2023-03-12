@@ -1,9 +1,9 @@
 import React from 'react';
 import { string } from 'prop-types';
 
-import SentenceContext from './sentence-context';
+import SentenceContext from '../sentence-context';
 
-import Segment from '../Segment';
+import Segment from '../../Segment';
 
 const SegmentWithContext = ({ lnum }) => (
   <SentenceContext.Consumer>
