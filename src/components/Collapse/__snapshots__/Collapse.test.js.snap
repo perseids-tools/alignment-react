@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders collapsed 1`] = `
+<div>
+  <button
+    className="button"
+    onClick={[Function]}
+    type="button"
+  >
+    <div>
+      Title
+    </div>
+    <div
+      className="right"
+    >
+      +
+    </div>
+  </button>
+</div>
+`;
+
+exports[`renders uncollapsed 1`] = `
+<div>
+  <button
+    className="button"
+    onClick={[Function]}
+    type="button"
+  >
+    <div>
+      Title
+    </div>
+    <div
+      className="right"
+    >
+      -
+    </div>
+  </button>
+  <div>
+    Hello world
+  </div>
+</div>
+`;
