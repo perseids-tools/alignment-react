@@ -26,7 +26,7 @@ Note that this package has the following peer dependencies:
 
 ### Demo
 
-See the demo [App.js](/src/demo/App/App.js).
+See the demo [App.js](/example/src/App/App.js).
 
 ### Example
 
@@ -94,7 +94,7 @@ export default  App;
 
 #### Alignment
 
-The `<Alignment>` component accepts alignment XML as an `alignment` prop.
+The `<Alignment>` component accepts an XML document of an alignment as an `alignment` prop.
 The other components should be children (or grandchildren, etc.) of the `<Alignment>` component.
 
 #### Sentence
@@ -149,13 +149,16 @@ cd example
 yarn start
 ```
 
-### Deploying demo application
-
-`yarn deploy`
-
 ### Building
 
 `yarn build`
+
+### Deploying demo application
+
+```
+yarn build
+yarn deploy
+```
 
 ### Publishing
 
