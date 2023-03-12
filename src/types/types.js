@@ -22,7 +22,7 @@ const wordListType = shape({
 
 const sentenceType = shape({
   $: shape({
-    id: string.isRequired,
+    n: string.isRequired,
   }),
   wds: arrayOf(wordListType),
 });

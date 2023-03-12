@@ -94,7 +94,7 @@ const buildIdMap = (alignedText, sentence) => {
 };
 
 // eslint-disable-next-line react/prop-types
-const WrappedSentence = ({ id, json, children }) => {
+const WrappedSentence = ({ n, json, children }) => {
   const [active, setActive] = useState(null);
   const [idMap, setIdMap] = useState({});
   const [sentence, setSentence] = useState({});
@@ -102,11 +102,11 @@ const WrappedSentence = ({ id, json, children }) => {
   useEffect(() => {
     const alignedText = json['aligned-text'];
     const newSentence = (alignedText.sentence || [])
-      .find(({ $: { id: sentenceId } }) => sentenceId === id);
+      .find(({ $: { n: sentenceN } }) => n === sentenceN);
 
     setSentence(newSentence);
     setIdMap(buildIdMap(alignedText, newSentence));
-  }, [id, json]);
+  }, [n, json]);
 
   const toggleActive = ([lnum, wordId]) => {
     if (active && active[lnum] && active[lnum].has(wordId)) {
@@ -128,10 +128,10 @@ const WrappedSentence = ({ id, json, children }) => {
   );
 };
 
-const Sentence = ({ id, children }) => (
+const Sentence = ({ n, children }) => (
   <AlignmentContext.Consumer>
     {({ json }) => (
-      <WrappedSentence id={id} json={json}>
+      <WrappedSentence n={n} json={json}>
         {children}
       </WrappedSentence>
     )}
@@ -139,7 +139,7 @@ const Sentence = ({ id, children }) => (
 );
 
 WrappedSentence.propTypes = {
-  id: string.isRequired,
+  n: string.isRequired,
   json: alignmentType.isRequired,
   children: node,
 };
@@ -149,7 +149,7 @@ WrappedSentence.defaultProps = {
 };
 
 Sentence.propTypes = {
-  id: string.isRequired,
+  n: string.isRequired,
   children: node,
 };
 
