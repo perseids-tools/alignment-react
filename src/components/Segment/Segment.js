@@ -1,35 +1,50 @@
 import React from 'react';
 import styles from './Segment.module.scss';
 
-const wordMap = (words, lnum, active, setActive) => {
-  const map = [];
+const wordSpans = (words, lnum, active, setActive) => {
+  const spans = [];
 
   words.w.forEach((word) => {
-    const { text, $: { n }} = word;
-    const classes = [styles.word]
+    const { text, $: { n } } = word;
+    const classes = [styles.word];
 
     if (active[lnum] && active[lnum].has(n)) {
       classes.push(styles.active);
     }
+    const onClick = () => {
+      setActive([lnum, n]);
+    };
+    const onKeyDown = (event) => {
+      const { key } = event;
 
-    map.push(
+      if (key === 'Enter') {
+        onClick();
+      }
+    };
+
+    spans.push(
       <span
         key={n}
+        role="button"
+        tabIndex="0"
         className={classes.join(' ')}
-        onClick={() => setActive([lnum, n])}
+        onClick={onClick}
+        onKeyDown={onKeyDown}
       >
         {text[0]}
-      </span>
+      </span>,
     );
-    map.push(' ');
+    spans.push(' ');
   });
 
-  map.pop();
+  spans.pop();
 
-  return map;
+  return spans;
 };
 
-const Segment = ({ lnum, sentence, active, setActive }) => {
+const Segment = ({
+  lnum, sentence, active, setActive,
+}) => {
   const words = (sentence && sentence.wds) ? sentence.wds.find(({ $ }) => $.lnum === lnum) : false;
 
   if (!words) {
@@ -38,7 +53,7 @@ const Segment = ({ lnum, sentence, active, setActive }) => {
 
   return (
     <div className={styles.text}>
-      {wordMap(words, lnum, active, setActive)}
+      {wordSpans(words, lnum, active, setActive)}
     </div>
   );
 };

@@ -9,6 +9,5 @@ const xmlToJson = (xml) => {
   return json;
 };
 
-export {
-  xmlToJson,
-};
+// eslint-disable-next-line import/prefer-default-export
+export { xmlToJson };

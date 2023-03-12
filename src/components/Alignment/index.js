@@ -1,3 +1,3 @@
-import Alignment from './Alignment'
+import Alignment from './Alignment';
 
 export default Alignment;

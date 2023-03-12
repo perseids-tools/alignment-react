@@ -32,17 +32,17 @@ const uniq = (array) => Array.from(new Set(array));
 //   }
 // }
 // What this means is that words 1-1 and 1-2 in L1 are aligned with word 1-3 in L2.
-const buildIdMap = (alignedText, sentence, id) => {
+const buildIdMap = (alignedText, sentence) => {
   const idMap = {};
 
   const lnums = uniq(alignedText.language.map(({ $: { lnum } }) => lnum));
-  lnums.forEach((ln) => idMap[ln] = {});
+  lnums.forEach((ln) => { idMap[ln] = {}; });
 
   const addToSet = (outerLnum, outerN, innerLnum, innerN) => {
     if (!idMap[outerLnum][outerN]) {
       idMap[outerLnum][outerN] = {};
 
-      lnums.forEach((ln) => idMap[outerLnum][outerN][ln] = new Set());
+      lnums.forEach((ln) => { idMap[outerLnum][outerN][ln] = new Set(); });
     }
 
     idMap[outerLnum][outerN][innerLnum].add(innerN);
@@ -63,20 +63,20 @@ const buildIdMap = (alignedText, sentence, id) => {
     idMap[lnum2][n2][lnum2] = idMap[lnum1][n1][lnum2];
   };
 
-  (sentence.wds || []).forEach(wd => {
-    const lnum = wd.$.lnum;
+  (sentence.wds || []).forEach((wd) => {
+    const { lnum } = wd.$;
 
-    wd.w.forEach(word => {
-      const n = word.$.n;
+    wd.w.forEach((word) => {
+      const { n } = word.$;
       // Align every word with itself
       addToSet(lnum, n, lnum, n);
 
       if (word.refs) {
         const nrefs = word.refs[0].$.nrefs.split(/\s+/);
 
-        lnums.forEach(lnumRef => {
+        lnums.forEach((lnumRef) => {
           if (lnumRef !== lnum) {
-            nrefs.forEach(nref => {
+            nrefs.forEach((nref) => {
               addToSet(lnum, n, lnumRef, nref);
               addToSet(lnumRef, nref, lnum, n);
               unifySets(lnum, n, lnumRef, nref);
@@ -97,12 +97,12 @@ const WrappedSentence = ({ id, json, children }) => {
 
   useEffect(() => {
     const alignedText = json['aligned-text'];
-    const sentence = alignedText
-      ? alignedText.sentence.find(({ $: { id: sentenceId }}) => sentenceId === id)
+    const newSentence = alignedText
+      ? alignedText.sentence.find(({ $: { id: sentenceId } }) => sentenceId === id)
       : {};
 
-    setSentence(sentence);
-    setIdMap(buildIdMap(alignedText, sentence));
+    setSentence(newSentence);
+    setIdMap(buildIdMap(alignedText, newSentence));
   }, [id, json]);
 
   const setActiveFromChild = ([lnum, wordId]) => {
