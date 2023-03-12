@@ -1,0 +1,133 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`displays active words differently 1`] = `
+<div
+  className="text"
+>
+  <span
+    className="word"
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="button"
+    tabIndex="0"
+  >
+    A
+  </span>
+   
+  <span
+    className="word active"
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="button"
+    tabIndex="0"
+  >
+    BC
+  </span>
+   
+  <span
+    className="word"
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="button"
+    tabIndex="0"
+  >
+    D
+  </span>
+   
+  <span
+    className="word"
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="button"
+    tabIndex="0"
+  >
+    E
+  </span>
+   
+  <span
+    className="word"
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="button"
+    tabIndex="0"
+  >
+    F
+  </span>
+   
+  <span
+    className="word"
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="button"
+    tabIndex="0"
+  >
+    G
+  </span>
+</div>
+`;
+
+exports[`renders a sentence 1`] = `
+<div
+  className="text"
+>
+  <span
+    className="word"
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="button"
+    tabIndex="0"
+  >
+    A
+  </span>
+   
+  <span
+    className="word"
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="button"
+    tabIndex="0"
+  >
+    BC
+  </span>
+   
+  <span
+    className="word"
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="button"
+    tabIndex="0"
+  >
+    D
+  </span>
+   
+  <span
+    className="word"
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="button"
+    tabIndex="0"
+  >
+    E
+  </span>
+   
+  <span
+    className="word"
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="button"
+    tabIndex="0"
+  >
+    F
+  </span>
+   
+  <span
+    className="word"
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="button"
+    tabIndex="0"
+  >
+    G
+  </span>
+</div>
+`;
