@@ -28,7 +28,7 @@
     "start": "microbundle-crl watch --no-compress --format modern,cjs",
     "lint": "eslint .",
     "test": "cross-env CI=1 react-scripts test --env=jsdom",
-    "predeploy": "cd example && yarn install && yarn run build",
+    "predeploy": "cd example && yarn install && yarn build",
     "deploy": "gh-pages -d example/build"
   },
   "dependencies": {
