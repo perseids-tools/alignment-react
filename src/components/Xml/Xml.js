@@ -154,11 +154,12 @@ const Xml = ({
 Xml.propTypes = {
   active: activeType,
   sentence: sentenceType.isRequired,
-  toggleActive: func.isRequired,
+  toggleActive: func,
 };
 
 Xml.defaultProps = {
   active: null,
+  toggleActive: () => {},
 };
 
 export default Xml;

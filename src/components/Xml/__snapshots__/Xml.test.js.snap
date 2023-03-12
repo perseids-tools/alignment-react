@@ -1,0 +1,3575 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`displays active words differently 1`] = `
+<div
+  className="xml"
+>
+  <span
+    className="bracket"
+  >
+    
+    &lt;
+  </span>
+  <span
+    className="element"
+  >
+    sentence
+  </span>
+   
+  <span
+    className="attribute"
+  >
+    n
+    =
+  </span>
+  <span
+    className="attributeText"
+  >
+    "
+    1
+    "
+  </span>
+  
+  <span
+    className="bracket"
+  >
+    &gt;
+  </span>
+  <br />
+  <span
+    className="bracket"
+  >
+            
+    &lt;
+  </span>
+  <span
+    className="element"
+  >
+    wds
+  </span>
+   
+  <span
+    className="attribute"
+  >
+    lnum
+    =
+  </span>
+  <span
+    className="attributeText"
+  >
+    "
+    L1
+    "
+  </span>
+   /
+  <span
+    className="bracket"
+  >
+    &gt;
+  </span>
+  <br />
+  <div>
+    <span
+      className="bracket"
+    >
+                  
+      &lt;
+    </span>
+    <span
+      className="element"
+    >
+      comment
+    </span>
+     
+    <span
+      className="attribute"
+    >
+      class
+      =
+    </span>
+    <span
+      className="attributeText"
+    >
+      "
+      uri
+      "
+    </span>
+     /
+    <span
+      className="bracket"
+    >
+      &gt;
+    </span>
+    <br />
+  </div>
+  <div
+    className="word"
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="button"
+    tabIndex="0"
+  >
+    <span
+      className="bracket"
+    >
+                  
+      &lt;
+    </span>
+    <span
+      className="element"
+    >
+      w
+    </span>
+     
+    <span
+      className="attribute"
+    >
+      n
+      =
+    </span>
+    <span
+      className="attributeText"
+    >
+      "
+      1-1
+      "
+    </span>
+    
+    <span
+      className="bracket"
+    >
+      &gt;
+    </span>
+    <br />
+    <div>
+      <span
+        className="bracket"
+      >
+                        
+        &lt;
+      </span>
+      <span
+        className="element"
+      >
+        text
+      </span>
+      
+      <span
+        className="bracket"
+      >
+        &gt;
+      </span>
+      A
+      <span
+        className="bracket"
+      >
+        
+        &lt;
+      </span>
+      <span
+        className="element"
+      >
+        /
+        text
+      </span>
+      <span
+        className="bracket"
+      >
+        &gt;
+      </span>
+    </div>
+    <span
+      className="bracket"
+    >
+                      
+      &lt;
+    </span>
+    <span
+      className="element"
+    >
+      refs
+    </span>
+     
+    <span
+      className="attribute"
+    >
+      nrefs
+      =
+    </span>
+    <span
+      className="attributeText"
+    >
+      "
+      1-1
+      "
+    </span>
+    
+    <span
+      className="bracket"
+    >
+      &gt;
+    </span>
+    <br />
+    <span
+      className="bracket"
+    >
+                  
+      &lt;
+    </span>
+    <span
+      className="element"
+    >
+      /
+      w
+    </span>
+    <span
+      className="bracket"
+    >
+      &gt;
+    </span>
+  </div>
+  <div
+    className="word active"
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="button"
+    tabIndex="0"
+  >
+    <span
+      className="bracket"
+    >
+                  
+      &lt;
+    </span>
+    <span
+      className="element"
+    >
+      w
+    </span>
+     
+    <span
+      className="attribute"
+    >
+      n
+      =
+    </span>
+    <span
+      className="attributeText"
+    >
+      "
+      1-2
+      "
+    </span>
+    
+    <span
+      className="bracket"
+    >
+      &gt;
+    </span>
+    <br />
+    <div>
+      <span
+        className="bracket"
+      >
+                        
+        &lt;
+      </span>
+      <span
+        className="element"
+      >
+        text
+      </span>
+      
+      <span
+        className="bracket"
+      >
+        &gt;
+      </span>
+      BC
+      <span
+        className="bracket"
+      >
+        
+        &lt;
+      </span>
+      <span
+        className="element"
+      >
+        /
+        text
+      </span>
+      <span
+        className="bracket"
+      >
+        &gt;
+      </span>
+    </div>
+    <span
+      className="bracket"
+    >
+                      
+      &lt;
+    </span>
+    <span
+      className="element"
+    >
+      refs
+    </span>
+     
+    <span
+      className="attribute"
+    >
+      nrefs
+      =
+    </span>
+    <span
+      className="attributeText"
+    >
+      "
+      1-2 1-3
+      "
+    </span>
+    
+    <span
+      className="bracket"
+    >
+      &gt;
+    </span>
+    <br />
+    <span
+      className="bracket"
+    >
+                  
+      &lt;
+    </span>
+    <span
+      className="element"
+    >
+      /
+      w
+    </span>
+    <span
+      className="bracket"
+    >
+      &gt;
+    </span>
+  </div>
+  <div
+    className="word"
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="button"
+    tabIndex="0"
+  >
+    <span
+      className="bracket"
+    >
+                  
+      &lt;
+    </span>
+    <span
+      className="element"
+    >
+      w
+    </span>
+     
+    <span
+      className="attribute"
+    >
+      n
+      =
+    </span>
+    <span
+      className="attributeText"
+    >
+      "
+      1-3
+      "
+    </span>
+    
+    <span
+      className="bracket"
+    >
+      &gt;
+    </span>
+    <br />
+    <div>
+      <span
+        className="bracket"
+      >
+                        
+        &lt;
+      </span>
+      <span
+        className="element"
+      >
+        comment
+      </span>
+       
+      <span
+        className="attribute"
+      >
+        class
+        =
+      </span>
+      <span
+        className="attributeText"
+      >
+        "
+        mark
+        "
+      </span>
+      
+      <span
+        className="bracket"
+      >
+        &gt;
+      </span>
+      Test
+      <span
+        className="bracket"
+      >
+        
+        &lt;
+      </span>
+      <span
+        className="element"
+      >
+        /
+        comment
+      </span>
+      <span
+        className="bracket"
+      >
+        &gt;
+      </span>
+    </div>
+    <div>
+      <span
+        className="bracket"
+      >
+                        
+        &lt;
+      </span>
+      <span
+        className="element"
+      >
+        text
+      </span>
+      
+      <span
+        className="bracket"
+      >
+        &gt;
+      </span>
+      D
+      <span
+        className="bracket"
+      >
+        
+        &lt;
+      </span>
+      <span
+        className="element"
+      >
+        /
+        text
+      </span>
+      <span
+        className="bracket"
+      >
+        &gt;
+      </span>
+    </div>
+    <span
+      className="bracket"
+    >
+                      
+      &lt;
+    </span>
+    <span
+      className="element"
+    >
+      refs
+    </span>
+     
+    <span
+      className="attribute"
+    >
+      nrefs
+      =
+    </span>
+    <span
+      className="attributeText"
+    >
+      "
+      1-4
+      "
+    </span>
+    
+    <span
+      className="bracket"
+    >
+      &gt;
+    </span>
+    <br />
+    <span
+      className="bracket"
+    >
+                  
+      &lt;
+    </span>
+    <span
+      className="element"
+    >
+      /
+      w
+    </span>
+    <span
+      className="bracket"
+    >
+      &gt;
+    </span>
+  </div>
+  <div
+    className="word"
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="button"
+    tabIndex="0"
+  >
+    <span
+      className="bracket"
+    >
+                  
+      &lt;
+    </span>
+    <span
+      className="element"
+    >
+      w
+    </span>
+     
+    <span
+      className="attribute"
+    >
+      n
+      =
+    </span>
+    <span
+      className="attributeText"
+    >
+      "
+      1-4
+      "
+    </span>
+    
+    <span
+      className="bracket"
+    >
+      &gt;
+    </span>
+    <br />
+    <div>
+      <span
+        className="bracket"
+      >
+                        
+        &lt;
+      </span>
+      <span
+        className="element"
+      >
+        text
+      </span>
+      
+      <span
+        className="bracket"
+      >
+        &gt;
+      </span>
+      E
+      <span
+        className="bracket"
+      >
+        
+        &lt;
+      </span>
+      <span
+        className="element"
+      >
+        /
+        text
+      </span>
+      <span
+        className="bracket"
+      >
+        &gt;
+      </span>
+    </div>
+    <span
+      className="bracket"
+    >
+                      
+      &lt;
+    </span>
+    <span
+      className="element"
+    >
+      refs
+    </span>
+     
+    <span
+      className="attribute"
+    >
+      nrefs
+      =
+    </span>
+    <span
+      className="attributeText"
+    >
+      "
+      1-4
+      "
+    </span>
+    
+    <span
+      className="bracket"
+    >
+      &gt;
+    </span>
+    <br />
+    <span
+      className="bracket"
+    >
+                  
+      &lt;
+    </span>
+    <span
+      className="element"
+    >
+      /
+      w
+    </span>
+    <span
+      className="bracket"
+    >
+      &gt;
+    </span>
+  </div>
+  <div
+    className="word"
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="button"
+    tabIndex="0"
+  >
+    <span
+      className="bracket"
+    >
+                  
+      &lt;
+    </span>
+    <span
+      className="element"
+    >
+      w
+    </span>
+     
+    <span
+      className="attribute"
+    >
+      n
+      =
+    </span>
+    <span
+      className="attributeText"
+    >
+      "
+      1-5
+      "
+    </span>
+    
+    <span
+      className="bracket"
+    >
+      &gt;
+    </span>
+    <br />
+    <div>
+      <span
+        className="bracket"
+      >
+                        
+        &lt;
+      </span>
+      <span
+        className="element"
+      >
+        text
+      </span>
+      
+      <span
+        className="bracket"
+      >
+        &gt;
+      </span>
+      F
+      <span
+        className="bracket"
+      >
+        
+        &lt;
+      </span>
+      <span
+        className="element"
+      >
+        /
+        text
+      </span>
+      <span
+        className="bracket"
+      >
+        &gt;
+      </span>
+    </div>
+    <span
+      className="bracket"
+    >
+                      
+      &lt;
+    </span>
+    <span
+      className="element"
+    >
+      refs
+    </span>
+     
+    <span
+      className="attribute"
+    >
+      nrefs
+      =
+    </span>
+    <span
+      className="attributeText"
+    >
+      "
+      1-5 1-6
+      "
+    </span>
+    
+    <span
+      className="bracket"
+    >
+      &gt;
+    </span>
+    <br />
+    <span
+      className="bracket"
+    >
+                  
+      &lt;
+    </span>
+    <span
+      className="element"
+    >
+      /
+      w
+    </span>
+    <span
+      className="bracket"
+    >
+      &gt;
+    </span>
+  </div>
+  <div
+    className="word"
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="button"
+    tabIndex="0"
+  >
+    <span
+      className="bracket"
+    >
+                  
+      &lt;
+    </span>
+    <span
+      className="element"
+    >
+      w
+    </span>
+     
+    <span
+      className="attribute"
+    >
+      n
+      =
+    </span>
+    <span
+      className="attributeText"
+    >
+      "
+      1-6
+      "
+    </span>
+    
+    <span
+      className="bracket"
+    >
+      &gt;
+    </span>
+    <br />
+    <div>
+      <span
+        className="bracket"
+      >
+                        
+        &lt;
+      </span>
+      <span
+        className="element"
+      >
+        text
+      </span>
+      
+      <span
+        className="bracket"
+      >
+        &gt;
+      </span>
+      G
+      <span
+        className="bracket"
+      >
+        
+        &lt;
+      </span>
+      <span
+        className="element"
+      >
+        /
+        text
+      </span>
+      <span
+        className="bracket"
+      >
+        &gt;
+      </span>
+    </div>
+    <span
+      className="bracket"
+    >
+                      
+      &lt;
+    </span>
+    <span
+      className="element"
+    >
+      refs
+    </span>
+     
+    <span
+      className="attribute"
+    >
+      nrefs
+      =
+    </span>
+    <span
+      className="attributeText"
+    >
+      "
+      1-5 1-6
+      "
+    </span>
+    
+    <span
+      className="bracket"
+    >
+      &gt;
+    </span>
+    <br />
+    <span
+      className="bracket"
+    >
+                  
+      &lt;
+    </span>
+    <span
+      className="element"
+    >
+      /
+      w
+    </span>
+    <span
+      className="bracket"
+    >
+      &gt;
+    </span>
+  </div>
+  <span
+    className="bracket"
+  >
+            
+    &lt;
+  </span>
+  <span
+    className="element"
+  >
+    /
+    wds
+  </span>
+  <span
+    className="bracket"
+  >
+    &gt;
+  </span>
+  <br />
+  <span
+    className="bracket"
+  >
+            
+    &lt;
+  </span>
+  <span
+    className="element"
+  >
+    wds
+  </span>
+   
+  <span
+    className="attribute"
+  >
+    lnum
+    =
+  </span>
+  <span
+    className="attributeText"
+  >
+    "
+    L2
+    "
+  </span>
+   /
+  <span
+    className="bracket"
+  >
+    &gt;
+  </span>
+  <br />
+  <div>
+    <span
+      className="bracket"
+    >
+                  
+      &lt;
+    </span>
+    <span
+      className="element"
+    >
+      comment
+    </span>
+     
+    <span
+      className="attribute"
+    >
+      class
+      =
+    </span>
+    <span
+      className="attributeText"
+    >
+      "
+      uri
+      "
+    </span>
+     /
+    <span
+      className="bracket"
+    >
+      &gt;
+    </span>
+    <br />
+  </div>
+  <div
+    className="word"
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="button"
+    tabIndex="0"
+  >
+    <span
+      className="bracket"
+    >
+                  
+      &lt;
+    </span>
+    <span
+      className="element"
+    >
+      w
+    </span>
+     
+    <span
+      className="attribute"
+    >
+      n
+      =
+    </span>
+    <span
+      className="attributeText"
+    >
+      "
+      1-1
+      "
+    </span>
+    
+    <span
+      className="bracket"
+    >
+      &gt;
+    </span>
+    <br />
+    <div>
+      <span
+        className="bracket"
+      >
+                        
+        &lt;
+      </span>
+      <span
+        className="element"
+      >
+        text
+      </span>
+      
+      <span
+        className="bracket"
+      >
+        &gt;
+      </span>
+      A
+      <span
+        className="bracket"
+      >
+        
+        &lt;
+      </span>
+      <span
+        className="element"
+      >
+        /
+        text
+      </span>
+      <span
+        className="bracket"
+      >
+        &gt;
+      </span>
+    </div>
+    <span
+      className="bracket"
+    >
+                      
+      &lt;
+    </span>
+    <span
+      className="element"
+    >
+      refs
+    </span>
+     
+    <span
+      className="attribute"
+    >
+      nrefs
+      =
+    </span>
+    <span
+      className="attributeText"
+    >
+      "
+      1-1
+      "
+    </span>
+    
+    <span
+      className="bracket"
+    >
+      &gt;
+    </span>
+    <br />
+    <span
+      className="bracket"
+    >
+                  
+      &lt;
+    </span>
+    <span
+      className="element"
+    >
+      /
+      w
+    </span>
+    <span
+      className="bracket"
+    >
+      &gt;
+    </span>
+  </div>
+  <div
+    className="word active"
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="button"
+    tabIndex="0"
+  >
+    <span
+      className="bracket"
+    >
+                  
+      &lt;
+    </span>
+    <span
+      className="element"
+    >
+      w
+    </span>
+     
+    <span
+      className="attribute"
+    >
+      n
+      =
+    </span>
+    <span
+      className="attributeText"
+    >
+      "
+      1-2
+      "
+    </span>
+    
+    <span
+      className="bracket"
+    >
+      &gt;
+    </span>
+    <br />
+    <div>
+      <span
+        className="bracket"
+      >
+                        
+        &lt;
+      </span>
+      <span
+        className="element"
+      >
+        text
+      </span>
+      
+      <span
+        className="bracket"
+      >
+        &gt;
+      </span>
+      B
+      <span
+        className="bracket"
+      >
+        
+        &lt;
+      </span>
+      <span
+        className="element"
+      >
+        /
+        text
+      </span>
+      <span
+        className="bracket"
+      >
+        &gt;
+      </span>
+    </div>
+    <span
+      className="bracket"
+    >
+                      
+      &lt;
+    </span>
+    <span
+      className="element"
+    >
+      refs
+    </span>
+     
+    <span
+      className="attribute"
+    >
+      nrefs
+      =
+    </span>
+    <span
+      className="attributeText"
+    >
+      "
+      1-2
+      "
+    </span>
+    
+    <span
+      className="bracket"
+    >
+      &gt;
+    </span>
+    <br />
+    <span
+      className="bracket"
+    >
+                  
+      &lt;
+    </span>
+    <span
+      className="element"
+    >
+      /
+      w
+    </span>
+    <span
+      className="bracket"
+    >
+      &gt;
+    </span>
+  </div>
+  <div
+    className="word active"
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="button"
+    tabIndex="0"
+  >
+    <span
+      className="bracket"
+    >
+                  
+      &lt;
+    </span>
+    <span
+      className="element"
+    >
+      w
+    </span>
+     
+    <span
+      className="attribute"
+    >
+      n
+      =
+    </span>
+    <span
+      className="attributeText"
+    >
+      "
+      1-3
+      "
+    </span>
+    
+    <span
+      className="bracket"
+    >
+      &gt;
+    </span>
+    <br />
+    <div>
+      <span
+        className="bracket"
+      >
+                        
+        &lt;
+      </span>
+      <span
+        className="element"
+      >
+        text
+      </span>
+      
+      <span
+        className="bracket"
+      >
+        &gt;
+      </span>
+      C
+      <span
+        className="bracket"
+      >
+        
+        &lt;
+      </span>
+      <span
+        className="element"
+      >
+        /
+        text
+      </span>
+      <span
+        className="bracket"
+      >
+        &gt;
+      </span>
+    </div>
+    <span
+      className="bracket"
+    >
+                      
+      &lt;
+    </span>
+    <span
+      className="element"
+    >
+      refs
+    </span>
+     
+    <span
+      className="attribute"
+    >
+      nrefs
+      =
+    </span>
+    <span
+      className="attributeText"
+    >
+      "
+      1-2
+      "
+    </span>
+    
+    <span
+      className="bracket"
+    >
+      &gt;
+    </span>
+    <br />
+    <span
+      className="bracket"
+    >
+                  
+      &lt;
+    </span>
+    <span
+      className="element"
+    >
+      /
+      w
+    </span>
+    <span
+      className="bracket"
+    >
+      &gt;
+    </span>
+  </div>
+  <div
+    className="word"
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="button"
+    tabIndex="0"
+  >
+    <span
+      className="bracket"
+    >
+                  
+      &lt;
+    </span>
+    <span
+      className="element"
+    >
+      w
+    </span>
+     
+    <span
+      className="attribute"
+    >
+      n
+      =
+    </span>
+    <span
+      className="attributeText"
+    >
+      "
+      1-4
+      "
+    </span>
+    
+    <span
+      className="bracket"
+    >
+      &gt;
+    </span>
+    <br />
+    <div>
+      <span
+        className="bracket"
+      >
+                        
+        &lt;
+      </span>
+      <span
+        className="element"
+      >
+        text
+      </span>
+      
+      <span
+        className="bracket"
+      >
+        &gt;
+      </span>
+      DE
+      <span
+        className="bracket"
+      >
+        
+        &lt;
+      </span>
+      <span
+        className="element"
+      >
+        /
+        text
+      </span>
+      <span
+        className="bracket"
+      >
+        &gt;
+      </span>
+    </div>
+    <span
+      className="bracket"
+    >
+                      
+      &lt;
+    </span>
+    <span
+      className="element"
+    >
+      refs
+    </span>
+     
+    <span
+      className="attribute"
+    >
+      nrefs
+      =
+    </span>
+    <span
+      className="attributeText"
+    >
+      "
+      1-3 1-4
+      "
+    </span>
+    
+    <span
+      className="bracket"
+    >
+      &gt;
+    </span>
+    <br />
+    <span
+      className="bracket"
+    >
+                  
+      &lt;
+    </span>
+    <span
+      className="element"
+    >
+      /
+      w
+    </span>
+    <span
+      className="bracket"
+    >
+      &gt;
+    </span>
+  </div>
+  <div
+    className="word"
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="button"
+    tabIndex="0"
+  >
+    <span
+      className="bracket"
+    >
+                  
+      &lt;
+    </span>
+    <span
+      className="element"
+    >
+      w
+    </span>
+     
+    <span
+      className="attribute"
+    >
+      n
+      =
+    </span>
+    <span
+      className="attributeText"
+    >
+      "
+      1-5
+      "
+    </span>
+    
+    <span
+      className="bracket"
+    >
+      &gt;
+    </span>
+    <br />
+    <div>
+      <span
+        className="bracket"
+      >
+                        
+        &lt;
+      </span>
+      <span
+        className="element"
+      >
+        text
+      </span>
+      
+      <span
+        className="bracket"
+      >
+        &gt;
+      </span>
+      F
+      <span
+        className="bracket"
+      >
+        
+        &lt;
+      </span>
+      <span
+        className="element"
+      >
+        /
+        text
+      </span>
+      <span
+        className="bracket"
+      >
+        &gt;
+      </span>
+    </div>
+    <span
+      className="bracket"
+    >
+                      
+      &lt;
+    </span>
+    <span
+      className="element"
+    >
+      refs
+    </span>
+     
+    <span
+      className="attribute"
+    >
+      nrefs
+      =
+    </span>
+    <span
+      className="attributeText"
+    >
+      "
+      1-5 1-6
+      "
+    </span>
+    
+    <span
+      className="bracket"
+    >
+      &gt;
+    </span>
+    <br />
+    <span
+      className="bracket"
+    >
+                  
+      &lt;
+    </span>
+    <span
+      className="element"
+    >
+      /
+      w
+    </span>
+    <span
+      className="bracket"
+    >
+      &gt;
+    </span>
+  </div>
+  <div
+    className="word"
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="button"
+    tabIndex="0"
+  >
+    <span
+      className="bracket"
+    >
+                  
+      &lt;
+    </span>
+    <span
+      className="element"
+    >
+      w
+    </span>
+     
+    <span
+      className="attribute"
+    >
+      n
+      =
+    </span>
+    <span
+      className="attributeText"
+    >
+      "
+      1-6
+      "
+    </span>
+    
+    <span
+      className="bracket"
+    >
+      &gt;
+    </span>
+    <br />
+    <div>
+      <span
+        className="bracket"
+      >
+                        
+        &lt;
+      </span>
+      <span
+        className="element"
+      >
+        text
+      </span>
+      
+      <span
+        className="bracket"
+      >
+        &gt;
+      </span>
+      G
+      <span
+        className="bracket"
+      >
+        
+        &lt;
+      </span>
+      <span
+        className="element"
+      >
+        /
+        text
+      </span>
+      <span
+        className="bracket"
+      >
+        &gt;
+      </span>
+    </div>
+    <span
+      className="bracket"
+    >
+                      
+      &lt;
+    </span>
+    <span
+      className="element"
+    >
+      refs
+    </span>
+     
+    <span
+      className="attribute"
+    >
+      nrefs
+      =
+    </span>
+    <span
+      className="attributeText"
+    >
+      "
+      1-5 1-6
+      "
+    </span>
+    
+    <span
+      className="bracket"
+    >
+      &gt;
+    </span>
+    <br />
+    <span
+      className="bracket"
+    >
+                  
+      &lt;
+    </span>
+    <span
+      className="element"
+    >
+      /
+      w
+    </span>
+    <span
+      className="bracket"
+    >
+      &gt;
+    </span>
+  </div>
+  <span
+    className="bracket"
+  >
+            
+    &lt;
+  </span>
+  <span
+    className="element"
+  >
+    /
+    wds
+  </span>
+  <span
+    className="bracket"
+  >
+    &gt;
+  </span>
+  <br />
+  <span
+    className="bracket"
+  >
+    
+    &lt;
+  </span>
+  <span
+    className="element"
+  >
+    /
+    sentence
+  </span>
+  <span
+    className="bracket"
+  >
+    &gt;
+  </span>
+</div>
+`;
+
+exports[`renders a sentence as XML 1`] = `
+<div
+  className="xml"
+>
+  <span
+    className="bracket"
+  >
+    
+    &lt;
+  </span>
+  <span
+    className="element"
+  >
+    sentence
+  </span>
+   
+  <span
+    className="attribute"
+  >
+    n
+    =
+  </span>
+  <span
+    className="attributeText"
+  >
+    "
+    1
+    "
+  </span>
+  
+  <span
+    className="bracket"
+  >
+    &gt;
+  </span>
+  <br />
+  <span
+    className="bracket"
+  >
+            
+    &lt;
+  </span>
+  <span
+    className="element"
+  >
+    wds
+  </span>
+   
+  <span
+    className="attribute"
+  >
+    lnum
+    =
+  </span>
+  <span
+    className="attributeText"
+  >
+    "
+    L1
+    "
+  </span>
+   /
+  <span
+    className="bracket"
+  >
+    &gt;
+  </span>
+  <br />
+  <div>
+    <span
+      className="bracket"
+    >
+                  
+      &lt;
+    </span>
+    <span
+      className="element"
+    >
+      comment
+    </span>
+     
+    <span
+      className="attribute"
+    >
+      class
+      =
+    </span>
+    <span
+      className="attributeText"
+    >
+      "
+      uri
+      "
+    </span>
+     /
+    <span
+      className="bracket"
+    >
+      &gt;
+    </span>
+    <br />
+  </div>
+  <div
+    className="word"
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="button"
+    tabIndex="0"
+  >
+    <span
+      className="bracket"
+    >
+                  
+      &lt;
+    </span>
+    <span
+      className="element"
+    >
+      w
+    </span>
+     
+    <span
+      className="attribute"
+    >
+      n
+      =
+    </span>
+    <span
+      className="attributeText"
+    >
+      "
+      1-1
+      "
+    </span>
+    
+    <span
+      className="bracket"
+    >
+      &gt;
+    </span>
+    <br />
+    <div>
+      <span
+        className="bracket"
+      >
+                        
+        &lt;
+      </span>
+      <span
+        className="element"
+      >
+        text
+      </span>
+      
+      <span
+        className="bracket"
+      >
+        &gt;
+      </span>
+      A
+      <span
+        className="bracket"
+      >
+        
+        &lt;
+      </span>
+      <span
+        className="element"
+      >
+        /
+        text
+      </span>
+      <span
+        className="bracket"
+      >
+        &gt;
+      </span>
+    </div>
+    <span
+      className="bracket"
+    >
+                      
+      &lt;
+    </span>
+    <span
+      className="element"
+    >
+      refs
+    </span>
+     
+    <span
+      className="attribute"
+    >
+      nrefs
+      =
+    </span>
+    <span
+      className="attributeText"
+    >
+      "
+      1-1
+      "
+    </span>
+    
+    <span
+      className="bracket"
+    >
+      &gt;
+    </span>
+    <br />
+    <span
+      className="bracket"
+    >
+                  
+      &lt;
+    </span>
+    <span
+      className="element"
+    >
+      /
+      w
+    </span>
+    <span
+      className="bracket"
+    >
+      &gt;
+    </span>
+  </div>
+  <div
+    className="word"
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="button"
+    tabIndex="0"
+  >
+    <span
+      className="bracket"
+    >
+                  
+      &lt;
+    </span>
+    <span
+      className="element"
+    >
+      w
+    </span>
+     
+    <span
+      className="attribute"
+    >
+      n
+      =
+    </span>
+    <span
+      className="attributeText"
+    >
+      "
+      1-2
+      "
+    </span>
+    
+    <span
+      className="bracket"
+    >
+      &gt;
+    </span>
+    <br />
+    <div>
+      <span
+        className="bracket"
+      >
+                        
+        &lt;
+      </span>
+      <span
+        className="element"
+      >
+        text
+      </span>
+      
+      <span
+        className="bracket"
+      >
+        &gt;
+      </span>
+      BC
+      <span
+        className="bracket"
+      >
+        
+        &lt;
+      </span>
+      <span
+        className="element"
+      >
+        /
+        text
+      </span>
+      <span
+        className="bracket"
+      >
+        &gt;
+      </span>
+    </div>
+    <span
+      className="bracket"
+    >
+                      
+      &lt;
+    </span>
+    <span
+      className="element"
+    >
+      refs
+    </span>
+     
+    <span
+      className="attribute"
+    >
+      nrefs
+      =
+    </span>
+    <span
+      className="attributeText"
+    >
+      "
+      1-2 1-3
+      "
+    </span>
+    
+    <span
+      className="bracket"
+    >
+      &gt;
+    </span>
+    <br />
+    <span
+      className="bracket"
+    >
+                  
+      &lt;
+    </span>
+    <span
+      className="element"
+    >
+      /
+      w
+    </span>
+    <span
+      className="bracket"
+    >
+      &gt;
+    </span>
+  </div>
+  <div
+    className="word"
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="button"
+    tabIndex="0"
+  >
+    <span
+      className="bracket"
+    >
+                  
+      &lt;
+    </span>
+    <span
+      className="element"
+    >
+      w
+    </span>
+     
+    <span
+      className="attribute"
+    >
+      n
+      =
+    </span>
+    <span
+      className="attributeText"
+    >
+      "
+      1-3
+      "
+    </span>
+    
+    <span
+      className="bracket"
+    >
+      &gt;
+    </span>
+    <br />
+    <div>
+      <span
+        className="bracket"
+      >
+                        
+        &lt;
+      </span>
+      <span
+        className="element"
+      >
+        comment
+      </span>
+       
+      <span
+        className="attribute"
+      >
+        class
+        =
+      </span>
+      <span
+        className="attributeText"
+      >
+        "
+        mark
+        "
+      </span>
+      
+      <span
+        className="bracket"
+      >
+        &gt;
+      </span>
+      Test
+      <span
+        className="bracket"
+      >
+        
+        &lt;
+      </span>
+      <span
+        className="element"
+      >
+        /
+        comment
+      </span>
+      <span
+        className="bracket"
+      >
+        &gt;
+      </span>
+    </div>
+    <div>
+      <span
+        className="bracket"
+      >
+                        
+        &lt;
+      </span>
+      <span
+        className="element"
+      >
+        text
+      </span>
+      
+      <span
+        className="bracket"
+      >
+        &gt;
+      </span>
+      D
+      <span
+        className="bracket"
+      >
+        
+        &lt;
+      </span>
+      <span
+        className="element"
+      >
+        /
+        text
+      </span>
+      <span
+        className="bracket"
+      >
+        &gt;
+      </span>
+    </div>
+    <span
+      className="bracket"
+    >
+                      
+      &lt;
+    </span>
+    <span
+      className="element"
+    >
+      refs
+    </span>
+     
+    <span
+      className="attribute"
+    >
+      nrefs
+      =
+    </span>
+    <span
+      className="attributeText"
+    >
+      "
+      1-4
+      "
+    </span>
+    
+    <span
+      className="bracket"
+    >
+      &gt;
+    </span>
+    <br />
+    <span
+      className="bracket"
+    >
+                  
+      &lt;
+    </span>
+    <span
+      className="element"
+    >
+      /
+      w
+    </span>
+    <span
+      className="bracket"
+    >
+      &gt;
+    </span>
+  </div>
+  <div
+    className="word"
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="button"
+    tabIndex="0"
+  >
+    <span
+      className="bracket"
+    >
+                  
+      &lt;
+    </span>
+    <span
+      className="element"
+    >
+      w
+    </span>
+     
+    <span
+      className="attribute"
+    >
+      n
+      =
+    </span>
+    <span
+      className="attributeText"
+    >
+      "
+      1-4
+      "
+    </span>
+    
+    <span
+      className="bracket"
+    >
+      &gt;
+    </span>
+    <br />
+    <div>
+      <span
+        className="bracket"
+      >
+                        
+        &lt;
+      </span>
+      <span
+        className="element"
+      >
+        text
+      </span>
+      
+      <span
+        className="bracket"
+      >
+        &gt;
+      </span>
+      E
+      <span
+        className="bracket"
+      >
+        
+        &lt;
+      </span>
+      <span
+        className="element"
+      >
+        /
+        text
+      </span>
+      <span
+        className="bracket"
+      >
+        &gt;
+      </span>
+    </div>
+    <span
+      className="bracket"
+    >
+                      
+      &lt;
+    </span>
+    <span
+      className="element"
+    >
+      refs
+    </span>
+     
+    <span
+      className="attribute"
+    >
+      nrefs
+      =
+    </span>
+    <span
+      className="attributeText"
+    >
+      "
+      1-4
+      "
+    </span>
+    
+    <span
+      className="bracket"
+    >
+      &gt;
+    </span>
+    <br />
+    <span
+      className="bracket"
+    >
+                  
+      &lt;
+    </span>
+    <span
+      className="element"
+    >
+      /
+      w
+    </span>
+    <span
+      className="bracket"
+    >
+      &gt;
+    </span>
+  </div>
+  <div
+    className="word"
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="button"
+    tabIndex="0"
+  >
+    <span
+      className="bracket"
+    >
+                  
+      &lt;
+    </span>
+    <span
+      className="element"
+    >
+      w
+    </span>
+     
+    <span
+      className="attribute"
+    >
+      n
+      =
+    </span>
+    <span
+      className="attributeText"
+    >
+      "
+      1-5
+      "
+    </span>
+    
+    <span
+      className="bracket"
+    >
+      &gt;
+    </span>
+    <br />
+    <div>
+      <span
+        className="bracket"
+      >
+                        
+        &lt;
+      </span>
+      <span
+        className="element"
+      >
+        text
+      </span>
+      
+      <span
+        className="bracket"
+      >
+        &gt;
+      </span>
+      F
+      <span
+        className="bracket"
+      >
+        
+        &lt;
+      </span>
+      <span
+        className="element"
+      >
+        /
+        text
+      </span>
+      <span
+        className="bracket"
+      >
+        &gt;
+      </span>
+    </div>
+    <span
+      className="bracket"
+    >
+                      
+      &lt;
+    </span>
+    <span
+      className="element"
+    >
+      refs
+    </span>
+     
+    <span
+      className="attribute"
+    >
+      nrefs
+      =
+    </span>
+    <span
+      className="attributeText"
+    >
+      "
+      1-5 1-6
+      "
+    </span>
+    
+    <span
+      className="bracket"
+    >
+      &gt;
+    </span>
+    <br />
+    <span
+      className="bracket"
+    >
+                  
+      &lt;
+    </span>
+    <span
+      className="element"
+    >
+      /
+      w
+    </span>
+    <span
+      className="bracket"
+    >
+      &gt;
+    </span>
+  </div>
+  <div
+    className="word"
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="button"
+    tabIndex="0"
+  >
+    <span
+      className="bracket"
+    >
+                  
+      &lt;
+    </span>
+    <span
+      className="element"
+    >
+      w
+    </span>
+     
+    <span
+      className="attribute"
+    >
+      n
+      =
+    </span>
+    <span
+      className="attributeText"
+    >
+      "
+      1-6
+      "
+    </span>
+    
+    <span
+      className="bracket"
+    >
+      &gt;
+    </span>
+    <br />
+    <div>
+      <span
+        className="bracket"
+      >
+                        
+        &lt;
+      </span>
+      <span
+        className="element"
+      >
+        text
+      </span>
+      
+      <span
+        className="bracket"
+      >
+        &gt;
+      </span>
+      G
+      <span
+        className="bracket"
+      >
+        
+        &lt;
+      </span>
+      <span
+        className="element"
+      >
+        /
+        text
+      </span>
+      <span
+        className="bracket"
+      >
+        &gt;
+      </span>
+    </div>
+    <span
+      className="bracket"
+    >
+                      
+      &lt;
+    </span>
+    <span
+      className="element"
+    >
+      refs
+    </span>
+     
+    <span
+      className="attribute"
+    >
+      nrefs
+      =
+    </span>
+    <span
+      className="attributeText"
+    >
+      "
+      1-5 1-6
+      "
+    </span>
+    
+    <span
+      className="bracket"
+    >
+      &gt;
+    </span>
+    <br />
+    <span
+      className="bracket"
+    >
+                  
+      &lt;
+    </span>
+    <span
+      className="element"
+    >
+      /
+      w
+    </span>
+    <span
+      className="bracket"
+    >
+      &gt;
+    </span>
+  </div>
+  <span
+    className="bracket"
+  >
+            
+    &lt;
+  </span>
+  <span
+    className="element"
+  >
+    /
+    wds
+  </span>
+  <span
+    className="bracket"
+  >
+    &gt;
+  </span>
+  <br />
+  <span
+    className="bracket"
+  >
+            
+    &lt;
+  </span>
+  <span
+    className="element"
+  >
+    wds
+  </span>
+   
+  <span
+    className="attribute"
+  >
+    lnum
+    =
+  </span>
+  <span
+    className="attributeText"
+  >
+    "
+    L2
+    "
+  </span>
+   /
+  <span
+    className="bracket"
+  >
+    &gt;
+  </span>
+  <br />
+  <div>
+    <span
+      className="bracket"
+    >
+                  
+      &lt;
+    </span>
+    <span
+      className="element"
+    >
+      comment
+    </span>
+     
+    <span
+      className="attribute"
+    >
+      class
+      =
+    </span>
+    <span
+      className="attributeText"
+    >
+      "
+      uri
+      "
+    </span>
+     /
+    <span
+      className="bracket"
+    >
+      &gt;
+    </span>
+    <br />
+  </div>
+  <div
+    className="word"
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="button"
+    tabIndex="0"
+  >
+    <span
+      className="bracket"
+    >
+                  
+      &lt;
+    </span>
+    <span
+      className="element"
+    >
+      w
+    </span>
+     
+    <span
+      className="attribute"
+    >
+      n
+      =
+    </span>
+    <span
+      className="attributeText"
+    >
+      "
+      1-1
+      "
+    </span>
+    
+    <span
+      className="bracket"
+    >
+      &gt;
+    </span>
+    <br />
+    <div>
+      <span
+        className="bracket"
+      >
+                        
+        &lt;
+      </span>
+      <span
+        className="element"
+      >
+        text
+      </span>
+      
+      <span
+        className="bracket"
+      >
+        &gt;
+      </span>
+      A
+      <span
+        className="bracket"
+      >
+        
+        &lt;
+      </span>
+      <span
+        className="element"
+      >
+        /
+        text
+      </span>
+      <span
+        className="bracket"
+      >
+        &gt;
+      </span>
+    </div>
+    <span
+      className="bracket"
+    >
+                      
+      &lt;
+    </span>
+    <span
+      className="element"
+    >
+      refs
+    </span>
+     
+    <span
+      className="attribute"
+    >
+      nrefs
+      =
+    </span>
+    <span
+      className="attributeText"
+    >
+      "
+      1-1
+      "
+    </span>
+    
+    <span
+      className="bracket"
+    >
+      &gt;
+    </span>
+    <br />
+    <span
+      className="bracket"
+    >
+                  
+      &lt;
+    </span>
+    <span
+      className="element"
+    >
+      /
+      w
+    </span>
+    <span
+      className="bracket"
+    >
+      &gt;
+    </span>
+  </div>
+  <div
+    className="word"
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="button"
+    tabIndex="0"
+  >
+    <span
+      className="bracket"
+    >
+                  
+      &lt;
+    </span>
+    <span
+      className="element"
+    >
+      w
+    </span>
+     
+    <span
+      className="attribute"
+    >
+      n
+      =
+    </span>
+    <span
+      className="attributeText"
+    >
+      "
+      1-2
+      "
+    </span>
+    
+    <span
+      className="bracket"
+    >
+      &gt;
+    </span>
+    <br />
+    <div>
+      <span
+        className="bracket"
+      >
+                        
+        &lt;
+      </span>
+      <span
+        className="element"
+      >
+        text
+      </span>
+      
+      <span
+        className="bracket"
+      >
+        &gt;
+      </span>
+      B
+      <span
+        className="bracket"
+      >
+        
+        &lt;
+      </span>
+      <span
+        className="element"
+      >
+        /
+        text
+      </span>
+      <span
+        className="bracket"
+      >
+        &gt;
+      </span>
+    </div>
+    <span
+      className="bracket"
+    >
+                      
+      &lt;
+    </span>
+    <span
+      className="element"
+    >
+      refs
+    </span>
+     
+    <span
+      className="attribute"
+    >
+      nrefs
+      =
+    </span>
+    <span
+      className="attributeText"
+    >
+      "
+      1-2
+      "
+    </span>
+    
+    <span
+      className="bracket"
+    >
+      &gt;
+    </span>
+    <br />
+    <span
+      className="bracket"
+    >
+                  
+      &lt;
+    </span>
+    <span
+      className="element"
+    >
+      /
+      w
+    </span>
+    <span
+      className="bracket"
+    >
+      &gt;
+    </span>
+  </div>
+  <div
+    className="word"
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="button"
+    tabIndex="0"
+  >
+    <span
+      className="bracket"
+    >
+                  
+      &lt;
+    </span>
+    <span
+      className="element"
+    >
+      w
+    </span>
+     
+    <span
+      className="attribute"
+    >
+      n
+      =
+    </span>
+    <span
+      className="attributeText"
+    >
+      "
+      1-3
+      "
+    </span>
+    
+    <span
+      className="bracket"
+    >
+      &gt;
+    </span>
+    <br />
+    <div>
+      <span
+        className="bracket"
+      >
+                        
+        &lt;
+      </span>
+      <span
+        className="element"
+      >
+        text
+      </span>
+      
+      <span
+        className="bracket"
+      >
+        &gt;
+      </span>
+      C
+      <span
+        className="bracket"
+      >
+        
+        &lt;
+      </span>
+      <span
+        className="element"
+      >
+        /
+        text
+      </span>
+      <span
+        className="bracket"
+      >
+        &gt;
+      </span>
+    </div>
+    <span
+      className="bracket"
+    >
+                      
+      &lt;
+    </span>
+    <span
+      className="element"
+    >
+      refs
+    </span>
+     
+    <span
+      className="attribute"
+    >
+      nrefs
+      =
+    </span>
+    <span
+      className="attributeText"
+    >
+      "
+      1-2
+      "
+    </span>
+    
+    <span
+      className="bracket"
+    >
+      &gt;
+    </span>
+    <br />
+    <span
+      className="bracket"
+    >
+                  
+      &lt;
+    </span>
+    <span
+      className="element"
+    >
+      /
+      w
+    </span>
+    <span
+      className="bracket"
+    >
+      &gt;
+    </span>
+  </div>
+  <div
+    className="word"
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="button"
+    tabIndex="0"
+  >
+    <span
+      className="bracket"
+    >
+                  
+      &lt;
+    </span>
+    <span
+      className="element"
+    >
+      w
+    </span>
+     
+    <span
+      className="attribute"
+    >
+      n
+      =
+    </span>
+    <span
+      className="attributeText"
+    >
+      "
+      1-4
+      "
+    </span>
+    
+    <span
+      className="bracket"
+    >
+      &gt;
+    </span>
+    <br />
+    <div>
+      <span
+        className="bracket"
+      >
+                        
+        &lt;
+      </span>
+      <span
+        className="element"
+      >
+        text
+      </span>
+      
+      <span
+        className="bracket"
+      >
+        &gt;
+      </span>
+      DE
+      <span
+        className="bracket"
+      >
+        
+        &lt;
+      </span>
+      <span
+        className="element"
+      >
+        /
+        text
+      </span>
+      <span
+        className="bracket"
+      >
+        &gt;
+      </span>
+    </div>
+    <span
+      className="bracket"
+    >
+                      
+      &lt;
+    </span>
+    <span
+      className="element"
+    >
+      refs
+    </span>
+     
+    <span
+      className="attribute"
+    >
+      nrefs
+      =
+    </span>
+    <span
+      className="attributeText"
+    >
+      "
+      1-3 1-4
+      "
+    </span>
+    
+    <span
+      className="bracket"
+    >
+      &gt;
+    </span>
+    <br />
+    <span
+      className="bracket"
+    >
+                  
+      &lt;
+    </span>
+    <span
+      className="element"
+    >
+      /
+      w
+    </span>
+    <span
+      className="bracket"
+    >
+      &gt;
+    </span>
+  </div>
+  <div
+    className="word"
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="button"
+    tabIndex="0"
+  >
+    <span
+      className="bracket"
+    >
+                  
+      &lt;
+    </span>
+    <span
+      className="element"
+    >
+      w
+    </span>
+     
+    <span
+      className="attribute"
+    >
+      n
+      =
+    </span>
+    <span
+      className="attributeText"
+    >
+      "
+      1-5
+      "
+    </span>
+    
+    <span
+      className="bracket"
+    >
+      &gt;
+    </span>
+    <br />
+    <div>
+      <span
+        className="bracket"
+      >
+                        
+        &lt;
+      </span>
+      <span
+        className="element"
+      >
+        text
+      </span>
+      
+      <span
+        className="bracket"
+      >
+        &gt;
+      </span>
+      F
+      <span
+        className="bracket"
+      >
+        
+        &lt;
+      </span>
+      <span
+        className="element"
+      >
+        /
+        text
+      </span>
+      <span
+        className="bracket"
+      >
+        &gt;
+      </span>
+    </div>
+    <span
+      className="bracket"
+    >
+                      
+      &lt;
+    </span>
+    <span
+      className="element"
+    >
+      refs
+    </span>
+     
+    <span
+      className="attribute"
+    >
+      nrefs
+      =
+    </span>
+    <span
+      className="attributeText"
+    >
+      "
+      1-5 1-6
+      "
+    </span>
+    
+    <span
+      className="bracket"
+    >
+      &gt;
+    </span>
+    <br />
+    <span
+      className="bracket"
+    >
+                  
+      &lt;
+    </span>
+    <span
+      className="element"
+    >
+      /
+      w
+    </span>
+    <span
+      className="bracket"
+    >
+      &gt;
+    </span>
+  </div>
+  <div
+    className="word"
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="button"
+    tabIndex="0"
+  >
+    <span
+      className="bracket"
+    >
+                  
+      &lt;
+    </span>
+    <span
+      className="element"
+    >
+      w
+    </span>
+     
+    <span
+      className="attribute"
+    >
+      n
+      =
+    </span>
+    <span
+      className="attributeText"
+    >
+      "
+      1-6
+      "
+    </span>
+    
+    <span
+      className="bracket"
+    >
+      &gt;
+    </span>
+    <br />
+    <div>
+      <span
+        className="bracket"
+      >
+                        
+        &lt;
+      </span>
+      <span
+        className="element"
+      >
+        text
+      </span>
+      
+      <span
+        className="bracket"
+      >
+        &gt;
+      </span>
+      G
+      <span
+        className="bracket"
+      >
+        
+        &lt;
+      </span>
+      <span
+        className="element"
+      >
+        /
+        text
+      </span>
+      <span
+        className="bracket"
+      >
+        &gt;
+      </span>
+    </div>
+    <span
+      className="bracket"
+    >
+                      
+      &lt;
+    </span>
+    <span
+      className="element"
+    >
+      refs
+    </span>
+     
+    <span
+      className="attribute"
+    >
+      nrefs
+      =
+    </span>
+    <span
+      className="attributeText"
+    >
+      "
+      1-5 1-6
+      "
+    </span>
+    
+    <span
+      className="bracket"
+    >
+      &gt;
+    </span>
+    <br />
+    <span
+      className="bracket"
+    >
+                  
+      &lt;
+    </span>
+    <span
+      className="element"
+    >
+      /
+      w
+    </span>
+    <span
+      className="bracket"
+    >
+      &gt;
+    </span>
+  </div>
+  <span
+    className="bracket"
+  >
+            
+    &lt;
+  </span>
+  <span
+    className="element"
+  >
+    /
+    wds
+  </span>
+  <span
+    className="bracket"
+  >
+    &gt;
+  </span>
+  <br />
+  <span
+    className="bracket"
+  >
+    
+    &lt;
+  </span>
+  <span
+    className="element"
+  >
+    /
+    sentence
+  </span>
+  <span
+    className="bracket"
+  >
+    &gt;
+  </span>
+</div>
+`;

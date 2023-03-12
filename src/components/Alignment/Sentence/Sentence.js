@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { node, string } from 'prop-types';
 
 import { alignmentType } from '../../../types';
@@ -96,17 +96,10 @@ const buildIdMap = (alignedText, sentence) => {
 // eslint-disable-next-line react/prop-types
 const WrappedSentence = ({ n, json, children }) => {
   const [active, setActive] = useState(null);
-  const [idMap, setIdMap] = useState({});
-  const [sentence, setSentence] = useState({});
 
-  useEffect(() => {
-    const alignedText = json['aligned-text'];
-    const newSentence = (alignedText.sentence || [])
-      .find(({ $: { n: sentenceN } }) => n === sentenceN);
-
-    setSentence(newSentence);
-    setIdMap(buildIdMap(alignedText, newSentence));
-  }, [n, json]);
+  const alignedText = json['aligned-text'];
+  const sentence = (alignedText.sentence || []).find(({ $: { n: sentenceN } }) => n === sentenceN);
+  const idMap = buildIdMap(alignedText, sentence);
 
   const toggleActive = ([lnum, wordId]) => {
     if (active && active[lnum] && active[lnum].has(wordId)) {

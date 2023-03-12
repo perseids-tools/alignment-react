@@ -1,4 +1,6 @@
 import {
+  commentType,
+  refsType,
   wordType,
   wordListType,
   sentenceType,
@@ -7,6 +9,8 @@ import {
 } from './types';
 
 export {
+  commentType,
+  refsType,
   wordType,
   wordListType,
   sentenceType,

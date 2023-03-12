@@ -67,11 +67,12 @@ Segment.propTypes = {
   lnum: string.isRequired,
   sentence: sentenceType.isRequired,
   active: activeType,
-  toggleActive: func.isRequired,
+  toggleActive: func,
 };
 
 Segment.defaultProps = {
   active: null,
+  toggleActive: () => {},
 };
 
 export default Segment;
