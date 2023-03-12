@@ -1,7 +1,11 @@
 import Alignment from './components/Alignment';
-import Sentence from './components/Alignment/Sentence';
+import Collapse from './components/Collapse';
 import Segment from './components/Alignment/Segment';
+import Sentence from './components/Alignment/Sentence';
 
 export {
-  Alignment, Sentence, Segment,
+  Alignment,
+  Collapse,
+  Segment,
+  Sentence,
 };
