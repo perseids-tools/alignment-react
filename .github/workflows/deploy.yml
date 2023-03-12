@@ -25,15 +25,10 @@ jobs:
         env:
           CI: true
 
-      - name: Build
-        run: yarn build
-        env:
-          PUBLIC_URL: /treebank-react
-
       - name: Predeploy
         run: yarn predeploy
         env:
-          PUBLIC_URL: /treebank-react
+          PUBLIC_URL: /alignment-react
 
       - name: Deploy GitHub
         uses: JamesIves/github-pages-deploy-action@releases/v3

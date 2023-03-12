@@ -1,5 +1,7 @@
 import React from 'react';
 
+import styles from './App.module.scss';
+
 import {
   Alignment,
   Collapse,
@@ -458,15 +460,17 @@ const xml = `
 `;
 
 const App = () => (
-  <Alignment alignment={xml}>
-    <Sentence n="1">
-      <Segment lnum="L1" />
-      <Segment lnum="L2" />
-      <Collapse title="XML">
-        <Xml />
-      </Collapse>
-    </Sentence>
-  </Alignment>
+  <div className={styles.alignment}>
+    <Alignment alignment={xml}>
+      <Sentence n="1">
+        <Segment lnum="L1" />
+        <Segment lnum="L2" />
+        <Collapse title="XML">
+          <Xml />
+        </Collapse>
+      </Sentence>
+    </Alignment>
+  </div>
 );
 
 export default App;
