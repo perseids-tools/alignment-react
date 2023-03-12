@@ -11,6 +11,7 @@ const wordSpans = (words, lnum, active, toggleActive) => {
   words.w.forEach((word) => {
     const { text, $: { n } } = word;
     const classes = [styles.word];
+    const innerText = text.map(({ _ }) => _).join(<br />);
 
     if (active && active[lnum] && active[lnum].has(n)) {
       classes.push(styles.active);
@@ -35,7 +36,7 @@ const wordSpans = (words, lnum, active, toggleActive) => {
         onClick={onClick}
         onKeyDown={onKeyDown}
       >
-        {(text || []).join('')}
+        {innerText}
       </span>,
     );
     spans.push(' ');

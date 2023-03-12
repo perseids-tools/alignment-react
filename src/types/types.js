@@ -10,7 +10,9 @@ const wordType = shape({
   $: shape({
     n: string.isRequired,
   }),
-  text: arrayOf(string),
+  text: arrayOf(shape({
+    _: string.isRequired,
+  })),
 });
 
 const wordListType = shape({

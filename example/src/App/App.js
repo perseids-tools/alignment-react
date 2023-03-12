@@ -1,6 +1,12 @@
 import React from 'react';
 
-import { Alignment, Sentence, Segment } from 'alignment-react';
+import {
+  Alignment,
+  Collapse,
+  Sentence,
+  Segment,
+  Xml,
+} from 'alignment-react';
 import 'alignment-react/dist/index.css';
 
 // Public domain text from:
@@ -455,6 +461,9 @@ const App = () => (
     <Sentence n="1">
       <Segment lnum="L1" />
       <Segment lnum="L2" />
+      <Collapse title="XML">
+        <Xml />
+      </Collapse>
     </Sentence>
   </Alignment>
 );

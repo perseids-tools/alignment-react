@@ -1,0 +1,45 @@
+.xml {
+  background-color: rgb(242, 242, 242);
+  overflow-x: scroll;
+  white-space: nowrap;
+  text-align: left;
+
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+  padding-left: 0.4rem;
+  padding-right: 0.4rem;
+
+  margin-bottom: 0.2rem;
+}
+
+.word {
+  cursor: pointer;
+
+  &:hover {
+    background-color: #5BC8DC;
+  }
+}
+
+.active {
+  background-color: rgb(246, 217, 24);
+}
+
+.highlight {
+  background-color: #98eb09;
+}
+
+.bracket {
+  color: rgb(0, 0, 255);
+}
+
+.element {
+  color: rgb(128, 0, 128);
+}
+
+.attribute {
+  color: rgb(0, 0, 0);
+}
+
+.attributeText {
+  color: rgb(255, 0, 0);
+}
