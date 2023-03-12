@@ -1,4 +1,7 @@
 import React, { useState, useEffect } from 'react';
+import { node, string } from 'prop-types';
+
+import { alignmentType } from '../../../types';
 
 import AlignmentContext from '../alignment-context';
 import SentenceContext from '../sentence-context';
@@ -63,7 +66,7 @@ const buildIdMap = (alignedText, sentence) => {
     idMap[lnum2][n2][lnum2] = idMap[lnum1][n1][lnum2];
   };
 
-  (sentence.wds || []).forEach((wd) => {
+  sentence.wds.forEach((wd) => {
     const { lnum } = wd.$;
 
     wd.w.forEach((word) => {
@@ -90,16 +93,16 @@ const buildIdMap = (alignedText, sentence) => {
   return idMap;
 };
 
+// eslint-disable-next-line react/prop-types
 const WrappedSentence = ({ id, json, children }) => {
-  const [active, setActive] = useState({});
+  const [active, setActive] = useState(null);
   const [idMap, setIdMap] = useState({});
   const [sentence, setSentence] = useState({});
 
   useEffect(() => {
     const alignedText = json['aligned-text'];
-    const newSentence = alignedText
-      ? alignedText.sentence.find(({ $: { id: sentenceId } }) => sentenceId === id)
-      : {};
+    const newSentence = (alignedText.sentence || [])
+      .find(({ $: { id: sentenceId } }) => sentenceId === id);
 
     setSentence(newSentence);
     setIdMap(buildIdMap(alignedText, newSentence));
@@ -132,5 +135,24 @@ const Sentence = ({ id, children }) => (
     )}
   </AlignmentContext.Consumer>
 );
+
+WrappedSentence.propTypes = {
+  id: string.isRequired,
+  json: alignmentType.isRequired,
+  children: node,
+};
+
+WrappedSentence.defaultProps = {
+  children: null,
+};
+
+Sentence.propTypes = {
+  id: string.isRequired,
+  children: node,
+};
+
+Sentence.defaultProps = {
+  children: null,
+};
 
 export default Sentence;

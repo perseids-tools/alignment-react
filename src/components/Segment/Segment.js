@@ -1,4 +1,8 @@
 import React from 'react';
+import { func, string } from 'prop-types';
+
+import { activeType, sentenceType } from '../../types';
+
 import styles from './Segment.module.scss';
 
 const wordSpans = (words, lnum, active, setActive) => {
@@ -8,7 +12,7 @@ const wordSpans = (words, lnum, active, setActive) => {
     const { text, $: { n } } = word;
     const classes = [styles.word];
 
-    if (active[lnum] && active[lnum].has(n)) {
+    if (active && active[lnum] && active[lnum].has(n)) {
       classes.push(styles.active);
     }
     const onClick = () => {
@@ -31,7 +35,7 @@ const wordSpans = (words, lnum, active, setActive) => {
         onClick={onClick}
         onKeyDown={onKeyDown}
       >
-        {text[0]}
+        {(text || []).join('')}
       </span>,
     );
     spans.push(' ');
@@ -56,6 +60,17 @@ const Segment = ({
       {wordSpans(words, lnum, active, setActive)}
     </div>
   );
+};
+
+Segment.propTypes = {
+  lnum: string.isRequired,
+  sentence: sentenceType.isRequired,
+  active: activeType,
+  setActive: func.isRequired,
+};
+
+Segment.defaultProps = {
+  active: null,
 };
 
 export default Segment;

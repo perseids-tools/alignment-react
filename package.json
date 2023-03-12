@@ -32,6 +32,7 @@
     "deploy": "gh-pages -d example/build"
   },
   "dependencies": {
+    "prop-types": "^15.8.1",
     "xml2js": "^0.4.23"
   },
   "peerDependencies": {
