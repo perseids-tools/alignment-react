@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/alignment-react/static/css/main.d22b29c3.chunk.css",
-    "main.js": "/alignment-react/static/js/main.e74e49c8.chunk.js",
-    "main.js.map": "/alignment-react/static/js/main.e74e49c8.chunk.js.map",
+    "main.js": "/alignment-react/static/js/main.9b36a3d3.chunk.js",
+    "main.js.map": "/alignment-react/static/js/main.9b36a3d3.chunk.js.map",
     "runtime-main.js": "/alignment-react/static/js/runtime-main.c3ab3e79.js",
     "runtime-main.js.map": "/alignment-react/static/js/runtime-main.c3ab3e79.js.map",
     "static/js/2.76db579c.chunk.js": "/alignment-react/static/js/2.76db579c.chunk.js",
     "static/js/2.76db579c.chunk.js.map": "/alignment-react/static/js/2.76db579c.chunk.js.map",
     "index.html": "/alignment-react/index.html",
-    "precache-manifest.e74fe88b00571a72572d72ad81d39e22.js": "/alignment-react/precache-manifest.e74fe88b00571a72572d72ad81d39e22.js",
+    "precache-manifest.9aa3718608269fc7e2980da198c1de39.js": "/alignment-react/precache-manifest.9aa3718608269fc7e2980da198c1de39.js",
     "service-worker.js": "/alignment-react/service-worker.js",
     "static/css/main.d22b29c3.chunk.css.map": "/alignment-react/static/css/main.d22b29c3.chunk.css.map",
     "static/js/2.76db579c.chunk.js.LICENSE.txt": "/alignment-react/static/js/2.76db579c.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.c3ab3e79.js",
     "static/js/2.76db579c.chunk.js",
     "static/css/main.d22b29c3.chunk.css",
-    "static/js/main.e74e49c8.chunk.js"
+    "static/js/main.9b36a3d3.chunk.js"
   ]
 }
