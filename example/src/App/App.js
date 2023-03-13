@@ -9,7 +9,7 @@ import {
   Segment,
   Xml,
 } from 'alignment-react';
-import 'alignment-react/dist/index.css';
+import 'alignment-react/build/index.css';
 
 // Public domain text from:
 //   Herodotus, with an English translation by A. D. Godley.

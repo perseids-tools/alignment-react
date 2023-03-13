@@ -39,7 +39,7 @@ import {
   Xml,
 } from 'alignment-react';
 
-import 'alignment-react/dist/index.css';
+import 'alignment-react/build/index.css';
 
 const xml = `
 <aligned-text xmlns="http://alpheios.net/namespaces/aligned-text">
