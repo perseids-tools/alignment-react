@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { node, string } from 'prop-types';
 
 import { alignmentType } from '../../../types';
@@ -96,6 +96,7 @@ const buildIdMap = (alignedText, sentence) => {
 // eslint-disable-next-line react/prop-types
 const WrappedSentence = ({ n, json, children }) => {
   const [active, setActive] = useState(null);
+  useEffect(() => { setActive(null); }, [n, json]);
 
   const alignedText = json['aligned-text'];
   const sentence = (alignedText.sentence || []).find(({ $: { n: sentenceN } }) => n === sentenceN);
