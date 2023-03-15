@@ -82,6 +82,7 @@ const App = () => (
     <Sentence n="1">
       <Segment lnum="L1" />
       <Segment lnum="L2" />
+      <Comments />
       <Collapse title="XML">
         <Xml />
       </Collapse>
@@ -106,6 +107,11 @@ sentence to display.
 
 The `<Segment>` component shows the text of one of the languages. It takes an `lnum` prop for
 the `lnum` of the language to display.
+
+#### Comments
+
+The `<Comments>` component displays comments associated with any of the active words. If there
+are no comments, it does not render.
 
 #### Xml
 
