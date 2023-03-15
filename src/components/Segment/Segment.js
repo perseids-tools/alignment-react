@@ -58,7 +58,9 @@ const Segment = ({
 
   return (
     <div className={styles.text}>
-      {wordSpans(words, lnum, active, toggleActive)}
+      <p>
+        {wordSpans(words, lnum, active, toggleActive)}
+      </p>
     </div>
   );
 };
