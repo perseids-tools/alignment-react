@@ -5,6 +5,7 @@ import styles from './App.module.scss';
 import {
   Alignment,
   Collapse,
+  Comments,
   Sentence,
   Segment,
   Xml,
@@ -223,6 +224,7 @@ const xml = `
                 <refs nrefs="1-4"/>
             </w>
             <w n="1-5">
+                <comment class="mark">English often uses multiple words where Greek uses the genitive</comment>
                 <text>of</text>
                 <refs nrefs="1-3"/>
             </w>
@@ -465,6 +467,7 @@ const App = () => (
       <Sentence n="1">
         <Segment lnum="L1" />
         <Segment lnum="L2" />
+        <Comments />
         <Collapse title="XML">
           <Xml />
         </Collapse>

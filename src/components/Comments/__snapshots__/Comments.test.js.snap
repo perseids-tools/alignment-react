@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`displays all comments associated with active words 1`] = `
+<div
+  className="comments"
+>
+  <dl
+    className="dl"
+  >
+    <div
+      className="container"
+    >
+      <dt
+        className="dt"
+      >
+        D
+      </dt>
+      <dd
+        className="dd"
+      >
+        Test
+      </dd>
+    </div>
+  </dl>
+  <dl
+    className="dl"
+  >
+    <div
+      className="container"
+    >
+      <dt
+        className="dt"
+      >
+        C
+      </dt>
+      <dd
+        className="dd"
+      >
+        Other languge test
+      </dd>
+    </div>
+  </dl>
+</div>
+`;
+
+exports[`does not render when the active has no comment 1`] = `null`;
+
+exports[`does not render when there is no active 1`] = `null`;
