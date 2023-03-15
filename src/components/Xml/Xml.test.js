@@ -49,8 +49,11 @@ it('renders a sentence as XML', () => {
 
 it('displays active words differently', () => {
   const active = {
-    L1: new Set(['1-2']),
-    L2: new Set(['1-2', '1-3']),
+    selected: { lnum: 'L1', n: '1-1' },
+    aligned: {
+      L1: new Set(['1-2']),
+      L2: new Set(['1-2', '1-3']),
+    },
   };
 
   const component = (

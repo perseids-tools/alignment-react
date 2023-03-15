@@ -102,7 +102,7 @@ const renderWord = (word, key, lnum, active, toggleActive, indent) => {
     }
   };
 
-  if (active && active[lnum] && active[lnum].has(n)) {
+  if (active && active.aligned && active.aligned[lnum] && active.aligned[lnum].has(n)) {
     classes.push(styles.active);
   }
 

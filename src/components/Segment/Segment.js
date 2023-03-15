@@ -13,7 +13,7 @@ const wordSpans = (words, lnum, active, toggleActive) => {
     const classes = [styles.word];
     const innerText = text.map(({ _ }) => _).join(<br />);
 
-    if (active && active[lnum] && active[lnum].has(n)) {
+    if (active && active.aligned && active.aligned[lnum] && active.aligned[lnum].has(n)) {
       classes.push(styles.active);
     }
     const onClick = () => {

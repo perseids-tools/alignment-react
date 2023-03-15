@@ -51,7 +51,13 @@ const alignmentType = shape({
   }).isRequired,
 });
 
-const activeType = objectOf(instanceOf(Set));
+const activeType = shape({
+  selected: shape({
+    lnum: string.isRequired,
+    n: string.isRequired,
+  }).isRequired,
+  aligned: objectOf(instanceOf(Set)).isRequired,
+});
 
 export {
   commentType,

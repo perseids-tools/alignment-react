@@ -106,7 +106,10 @@ const WrappedSentence = ({ n, json, children }) => {
     if (active && active[lnum] && active[lnum].has(wordId)) {
       setActive(null);
     } else if (idMap[lnum] && idMap[lnum][wordId]) {
-      setActive(idMap[lnum][wordId]);
+      setActive({
+        selected: { lnum, n },
+        aligned: idMap[lnum][wordId],
+      });
     }
   };
 

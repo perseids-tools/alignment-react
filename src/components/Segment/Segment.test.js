@@ -49,7 +49,8 @@ it('renders a sentence', () => {
 
 it('displays active words differently', () => {
   const active = {
-    L1: new Set(['1-2']),
+    selected: { lnum: 'L1', n: '1-1' },
+    aligned: { L1: new Set(['1-2']) },
   };
 
   const component = (
