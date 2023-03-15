@@ -103,7 +103,7 @@ const WrappedSentence = ({ n, json, children }) => {
   const idMap = buildIdMap(alignedText, sentence);
 
   const toggleActive = ([lnum, wordId]) => {
-    if (active && active[lnum] && active[lnum].has(wordId)) {
+    if (active && active.aligned && active.aligned[lnum] && active.aligned[lnum].has(wordId)) {
       setActive(null);
     } else if (idMap[lnum] && idMap[lnum][wordId]) {
       setActive({
