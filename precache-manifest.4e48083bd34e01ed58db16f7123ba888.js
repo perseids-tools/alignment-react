@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ba402fd3b4037ee4221e55148c3b87ce",
+    "revision": "b7635b47c89385f323ea72e5561ad13a",
     "url": "/alignment-react/index.html"
   },
   {
-    "revision": "700aea5ea8d63f27bc34",
+    "revision": "a3124eac497a0ea4ec39",
     "url": "/alignment-react/static/css/main.e8711a86.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/alignment-react/static/js/2.76db579c.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "700aea5ea8d63f27bc34",
-    "url": "/alignment-react/static/js/main.0b4c1837.chunk.js"
+    "revision": "a3124eac497a0ea4ec39",
+    "url": "/alignment-react/static/js/main.86b2cf65.chunk.js"
   },
   {
     "revision": "3506c58b4346af9f6300",
